@@ -1,27 +1,23 @@
-[tool.poetry]
-name = "python-gtk-pygobject"
+[project]
+name = "py-gtk"
 version = "0.1.0"
-description = "Criando interfaces gráficas com Python (PyGObject) e GTK."
-authors = ["Renato Cruz <natorsc@gmail.com>"]
+description = "Creating graphical interfaces with Python (PyGObject) and GTK"
 readme = "README.md"
-package-mode = false
+requires-python = ">=3.13"
+dependencies = [
+    "pygobject>=3.50.0",
+]
 
-[tool.poetry.dependencies]
-python = ">=3.12,<3.14"
-pygobject = "^3.50.0"
-
-[tool.poetry.group.dev.dependencies]
-taskipy = "^1.14.1"
-ruff = "^0.8.4"
-pygobject-stubs = "^2.12.0"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[dependency-groups]
+dev = [
+    "pygobject-stubs>=2.12.0",
+    "ruff>=0.9.7",
+    "taskipy>=1.14.1",
+]
 
 [tool.ruff]
 line-length = 79
-# extend-exclude = ['']
+extend-exclude = ['docs']
 
 [tool.ruff.lint]
 select = ['I', 'F', 'E', 'W', 'PL', 'PT']
@@ -30,8 +26,5 @@ select = ['I', 'F', 'E', 'W', 'PL', 'PT']
 quote-style = 'single'
 
 [tool.taskipy.tasks]
-export = 'poetry export --without-hashes -o requirements.txt'
-export_dev = 'poetry export --without-hashes --with dev -o requirements-dev.txt'
-format = 'ruff format .'
-lint = 'ruff check . --select I --fix && ruff format .'
+format = 'ruff check . --select I --fix && ruff format .'
 blp = 'blueprint-compiler format -f -n .'

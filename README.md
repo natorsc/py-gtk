@@ -1,17 +1,12 @@
-![Creating graphical interfaces with Python (PyGObject) and GTK](./docs/images/pytthon-pygobject-gtk.webp "Creating graphical interfaces with Python (PyGObject) and GTK")
+![Creating graphical interfaces with Python (PyGObject) and GTK](./docs/images/pytthon-py-gtk.webp "Creating graphical interfaces with Python (PyGObject) and GTK")
 
 <br>
 
-[![en](https://img.shields.io/badge/lang-en-darkred.svg)](./README.md)
-[![pt-br](https://img.shields.io/badge/lang-pt--br-darkgreen.svg)](README.pt-br.md)
-
-<br>
-
-[![natorsc - pygobject-gtk](https://img.shields.io/static/v1?label=natorsc&message=pygobject-gtk&color=blue&logo=github)](https://github.com/natorsc/pygobject-gtk "Ir para o repositório.")
+[![natorsc - py-gtk](https://img.shields.io/static/v1?label=natorsc&message=py-gtk&color=blue&logo=github)](https://github.com/natorsc/py-gtk "Go to repository.")
 &emsp;
-[![stars - pygobject-gtk](https://img.shields.io/github/stars/natorsc/pygobject-gtk?style=social)](https://github.com/natorsc/pygobject-gtk)
+[![stars - py-gtk](https://img.shields.io/github/stars/natorsc/py-gtk?style=social)](https://github.com/natorsc/py-gtk)
 &emsp;
-[![forks - pygobject-gtk](https://img.shields.io/github/forks/natorsc/pygobject-gtk?style=social)](https://github.com/natorsc/pygobject-gtk)
+[![forks - py-gtk](https://img.shields.io/github/forks/natorsc/py-gtk?style=social)](https://github.com/natorsc/py-gtk)
 
 [![License MIT](https://img.shields.io/static/v1?label=License&message=MIT&color=blue)](./LICENSE)
 
@@ -21,7 +16,7 @@
 
 ## 📝 Description
 
-Repository created to centralize tips, tutorials and code examples on building graphical interfaces with the Python programming language (PyGObject) and the GTK graphics tookit.
+This repository is your go-to hub for tips, tutorials, and code examples on building stunning graphical interfaces with Python (PyGObject) and the GTK toolkit. Whether you're a beginner or an experienced developer, you'll find valuable resources to enhance your projects. If this content helps you, consider supporting the project with a donation to keep it growing!
 
 ---
 
@@ -33,27 +28,17 @@ To date, the following technologies have been used to build the project:
 &emsp;
 [![GTK](https://img.shields.io/badge/-GTK-blue?logo=gtk&logoColor=white)](https://www.gtk.org/ "Go to the site.")
 &emsp;
-[![Sphinx](https://img.shields.io/badge/-Sphinx-blue?logo=sphinx&logoColor=white)](https://www.sphinx-doc.org/ "Go to the site.")
-&emsp;
-[![Furo](https://img.shields.io/badge/-Furo-blue?logo=github&logoColor=white)](https://github.com/pradyunsg/furo/ "Go to the Github.")
-&emsp;
-[![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)
+[![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
 
 ---
 
 ## 🤓 Author
 
-Repository created with 💙 by [Renato Cruz](https://github.com/natorsc) 🤜🤛 Feel free to reach out!
+Crafted with 💙 by Renato Cruz 🤜🤛 Got questions or feedback? Feel free to reach out!
 
 [![Email](https://img.shields.io/badge/-Email-blueviolet?logo=gmail&logoColor=white)](mailto:natorsc@gmail.com "Send an email.")
 
-Check out programming and technology content on:
-
-[![www.justcode.com.br](https://img.shields.io/badge/-justcode.com.br-grey?logo=hashnode&logoColor=white)](https://www.justcode.com.br "Visit the justCode blog.")
-
-[![www.swift.dev.br](https://img.shields.io/badge/-swift.dev.br-orange?logo=hashnode&logoColor=white)](www.swift.dev.br "Visit the Swift Dev BR blog.")
-
-A playlist I often listen to while studying or coding 😁:
+What I’m listening to while deep in study or code mode 😎🎵:
 
 [![Spotify](https://img.shields.io/badge/-Spotify-darkgreen?logo=spotify&logoColor=white)](https://open.spotify.com/playlist/1xf3u29puXlnrWO7MsaHL5?si=A-LgwRJXSvOno_e6trpi5w&utm_source=copy-link "Access the playlist.")
 
@@ -61,9 +46,14 @@ A playlist I often listen to while studying or coding 😁:
 
 ## 💝 Donations
 
-Thank you for your donation, it is through it that I am able to maintain this content 😊.
+Thank you for your donation! Your support helps me keep this content alive and growing 😊.
 
-### Pix
+### Github
+
+https://github.com/sponsors/natorsc/
+
+
+### Pix (Brazil)
 
 **Chave**: `b1839493-2afe-484d-9272-82a3e402b36f`
 
