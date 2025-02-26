@@ -5,7 +5,6 @@ import configparser
 import gettext
 import pathlib
 
-
 import gi
 
 gi.require_version(namespace='Gtk', version='4.0')

@@ -4,8 +4,8 @@
 blueprint-compiler: `error: unsupported XML tag: <items>`.
 """
 
-import sys
 import pathlib
+import sys
 
 import gi
 

@@ -1,12 +1,11 @@
 # -*- coding: utf-8 -*-
 """Python - GTK - PyGObject."""
 
-import sys
 import pathlib
-
-from AdwPreferencesWindow import AdwPreferencesWindow
+import sys
 
 import gi
+from AdwPreferencesWindow import AdwPreferencesWindow
 
 gi.require_version(namespace='Gtk', version='4.0')
 gi.require_version(namespace='Adw', version='1')

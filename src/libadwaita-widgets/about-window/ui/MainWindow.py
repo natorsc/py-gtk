@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """Python - GTK - PyGObject."""
 
-import sys
 import pathlib
+import sys
 
 import gi
 
