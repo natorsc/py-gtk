@@ -7,9 +7,9 @@ import sys
 import gi
 
 gi.require_version(namespace='Gtk', version='4.0')
-gi.require_version(namespace='Adw', version='1')
 
-from gi.repository import Adw, Gio, Gtk
+
+from gi.repository import Gio, Gtk
 
 BASE_DIR = pathlib.Path(__file__).resolve().parent
 sys.path.append(str(BASE_DIR.parent.parent.parent / 'scripts'))

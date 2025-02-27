@@ -6,12 +6,9 @@ import pathlib
 import gi
 
 gi.require_version(namespace='Gtk', version='4.0')
-gi.require_version(namespace='Adw', version='1')
-
-from gi.repository import Adw, Gio, Gtk, Pango, PangoCairo
 
 
-
+from gi.repository import Gio, Gtk, Pango, PangoCairo
 
 PDF_FILE = str(BASE_DIR.joinpath('file-name.pdf'))
 

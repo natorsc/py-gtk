@@ -6,12 +6,9 @@ import pathlib
 import gi
 
 gi.require_version(namespace='Gtk', version='4.0')
-gi.require_version(namespace='Adw', version='1')
-
-from gi.repository import Adw, Gio, Gtk
 
 
-
+from gi.repository import Gio, Gtk
 
 SRC_DIR = BASE_DIR.parent.parent
 TEMPLATE = SRC_DIR.joinpath('data', 'pango', 'template.txt')
