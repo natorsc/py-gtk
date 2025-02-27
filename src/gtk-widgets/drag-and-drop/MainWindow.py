@@ -8,7 +8,7 @@ gi.require_version(namespace='Adw', version='1')
 
 from gi.repository import Adw, Gdk, Gio, GObject, Gtk
 
-Adw.init()
+
 
 
 class DropArea(Gtk.Label):

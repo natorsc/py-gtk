@@ -11,7 +11,7 @@ gi.require_version(namespace='Adw', version='1')
 
 from gi.repository import Adw, Gio, Gtk
 
-Adw.init()
+
 
 BASE_DIR = pathlib.Path(__file__).resolve().parent
 CUSTOM_IMAGE = str(

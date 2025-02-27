@@ -10,7 +10,7 @@ gi.require_version(namespace='Adw', version='1')
 
 from gi.repository import Adw, Gio, Gtk, Pango, PangoCairo
 
-Adw.init()
+
 
 
 PDF_FILE = str(BASE_DIR.joinpath('file-name.pdf'))

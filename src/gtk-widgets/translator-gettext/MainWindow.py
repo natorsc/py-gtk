@@ -12,7 +12,7 @@ gi.require_version(namespace='Adw', version='1')
 
 from gi.repository import Adw, Gio, Gtk
 
-Adw.init()
+
 
 APPLICATION_ID = 'br.com.justcode.PyGObject'
 
