@@ -33,7 +33,7 @@ class ExampleApplication(Gtk.Application):
     def __init__(self):
         super().__init__(
             application_id='br.com.justcode.PyGObject',
-            flags=Gio.ApplicationFlags.FLAGS_NONE,
+            flags=Gio.ApplicationFlags.DEFAULT_FLAGS,
         )
 
         self.create_action('quit', self.exit_app, ['<primary>q'])
