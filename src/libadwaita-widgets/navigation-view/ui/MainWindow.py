@@ -40,7 +40,6 @@ class ExampleApplication(Adw.Application):
         )
 
         self.create_action('quit', self.exit_app, ['<primary>q'])
-        self.create_action('preferences', self.on_preferences_action)
 
     def do_activate(self):
         win = self.props.active_window
@@ -53,9 +52,6 @@ class ExampleApplication(Adw.Application):
 
     def do_shutdown(self):
         Gtk.Application.do_shutdown(self)
-
-    def on_preferences_action(self, action, param):
-        print('Action `app.preferences` was active.')
 
     def exit_app(self, action, param):
         self.quit()

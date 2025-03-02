@@ -728,6 +728,17 @@ Pango tags
 
 ---
 
+#### Adw.NavigationView
+
+![Adw.NavigationView](./docs/images/libadwaita-widgets/navigation-view.png "Adw.NavigationView")
+
+- [Python](./src/libadwaita-widgets/navigation-view/main.py).
+- [GTK Blueprint](./src/libadwaita-widgets/navigation-view/ui/MainWindow.blp).
+- [Python load UI](./src/libadwaita-widgets/navigation-view/ui/MainWindow.py).
+- [UI](./src/libadwaita-widgets/navigation-view/ui/MainWindow.ui).
+
+---
+
 #### Adw.PasswordEntryRow
 
 ![Adw.PasswordEntryRow](./docs/images/libadwaita-widgets/password-entry-row.webp "Adw.PasswordEntryRow")
