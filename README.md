@@ -10,8 +10,6 @@
 
 [![License MIT](https://img.shields.io/static/v1?label=License&message=MIT&color=blue)](./LICENSE)
 
-[![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)
-
 # Creating graphical interfaces with Python (PyGObject) and GTK
 
 ## 📝 Description
@@ -114,7 +112,6 @@ https://github.com/sponsors/natorsc/
 #### Gtk.ActionBar
 
 ![Gtk.ActionBar](./docs/images/gtk-widgets/actionbar.webp "Gtk.ActionBar")
-
 
 - [Python](./src/gtk-widgets/actionbar/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/actionbar/ui/MainWindow.blp).

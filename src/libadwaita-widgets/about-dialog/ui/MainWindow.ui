@@ -11,18 +11,13 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
     <property name="default-width">683</property>
     <property name="default-height">384</property>
     <property name="content">
-      <object class="AdwToastOverlay">
+      <object class="AdwNavigationPage">
+        <property name="title">Title page 01</property>
+        <property name="tag">'page-01'</property>
         <property name="child">
           <object class="AdwToolbarView">
             <child type="top">
-              <object class="AdwHeaderBar" id="header_bar">
-                <child type="end">
-                  <object class="GtkMenuButton">
-                    <property name="icon-name">open-menu-symbolic</property>
-                    <property name="menu-model">primary_menu</property>
-                  </object>
-                </child>
-              </object>
+              <object class="AdwHeaderBar"></object>
             </child>
             <property name="content">
               <object class="GtkBox">
@@ -33,9 +28,9 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
                 <property name="margin-bottom">12</property>
                 <property name="margin-start">12</property>
                 <child>
-                  <object class="GtkLabel">
-                    <property name="label">Access the menu and click on the about button</property>
-                    <property name="vexpand">true</property>
+                  <object class="GtkButton">
+                    <property name="label">Click me</property>
+                    <signal name="clicked" handler="on_button_clicked"/>
                   </object>
                 </child>
               </object>
@@ -45,16 +40,4 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
       </object>
     </property>
   </template>
-  <menu id="primary_menu">
-    <section>
-      <item>
-        <attribute name="label" translatable="yes">Preferences</attribute>
-        <attribute name="action">app.preferences</attribute>
-      </item>
-      <item>
-        <attribute name="label" translatable="yes">About</attribute>
-        <attribute name="action">app.about</attribute>
-      </item>
-    </section>
-  </menu>
 </interface>

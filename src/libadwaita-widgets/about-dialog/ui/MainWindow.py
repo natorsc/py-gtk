@@ -12,18 +12,43 @@ gi.require_version(namespace='Adw', version='1')
 from gi.repository import Adw, Gio, Gtk
 
 BASE_DIR = pathlib.Path(__file__).resolve().parent
-UI = BASE_DIR / 'MainWindow.ui'
+sys.path.append(str(BASE_DIR.parent.parent.parent / 'scripts'))
+
+from blp import blp_to_ui
+
+UI_FILE = BASE_DIR / 'MainWindow.ui'
+BLP_FILE = BASE_DIR / 'MainWindow.blp'
+blp_to_ui(file=BLP_FILE)
 
 
 Adw.init()
 
 
-@Gtk.Template(filename=UI)
+@Gtk.Template(filename=UI_FILE)
 class ExampleWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
+
+    @Gtk.Template.Callback()
+    def on_button_clicked(self, button):
+        dialog = Adw.AboutDialog.new()
+        dialog.set_application_name('Python - GTK - PyGObject.')
+        dialog.set_version('0.0.1')
+        dialog.set_developer_name('Renato Cruz (natorsc)')
+        dialog.set_license_type(Gtk.License(Gtk.License.MIT_X11))
+        dialog.set_comments(
+            'Creating graphical interfaces with the Python programming '
+            'language (PyGObject) and the GTK graphics toolkit'
+        )
+        dialog.set_website('https://github.com/natorsc/py-gtk/')
+        dialog.set_issue_url('https://github.com/natorsc/py-gtk/issues')
+        dialog.set_translator_credits('Renato Cruz')
+        dialog.set_copyright('© 2022 Renato Cruz (natorsc)')
+        dialog.set_developers(['natorsc https://github.com/natorsc'])
+        dialog.set_application_icon('help-about-symbolic')
+        dialog.present()
 
 
 class ExampleApplication(Adw.Application):
@@ -34,8 +59,6 @@ class ExampleApplication(Adw.Application):
         )
 
         self.create_action('quit', self.exit_app, ['<primary>q'])
-        self.create_action('preferences', self.on_preferences_action)
-        self.create_action('about', self.on_about_action)
 
     def do_activate(self):
         win = self.props.active_window
@@ -51,28 +74,6 @@ class ExampleApplication(Adw.Application):
 
     def on_preferences_action(self, action, param):
         print('Action `app.preferences` was active.')
-
-    def on_about_action(self, action, param):
-        dialog = Adw.AboutWindow.new()
-        dialog.set_transient_for(parent=self.get_active_window())
-        dialog.set_application_name('Python e GTK')
-        dialog.set_version('0.0.1')
-        dialog.set_developer_name('Renato Cruz (natorsc)')
-        dialog.set_license_type(Gtk.License(Gtk.License.MIT_X11))
-        dialog.set_comments(
-            'Creating graphical interfaces with the Python programming '
-            'language (PyGObject) and the GTK graphics toolkit'
-        )
-        dialog.set_website('https://gtk.justcode.com.br')
-        dialog.set_issue_url(
-            'https://github.com/natorsc/gui-python-pygobject-gtk/issues'
-        )
-        dialog.add_credit_section('Contributors', ['Name-01', 'Name-02'])
-        dialog.set_translator_credits('Renato Cruz')
-        dialog.set_copyright('© 2022 Renato Cruz (natorsc)')
-        dialog.set_developers(['natorsc https://github.com/natorsc'])
-        dialog.set_application_icon('help-about-symbolic')
-        dialog.present()
 
     def exit_app(self, action, param):
         self.quit()
