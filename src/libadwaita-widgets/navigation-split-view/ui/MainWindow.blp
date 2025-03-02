@@ -9,78 +9,12 @@ template $ExampleWindow: Adw.ApplicationWindow {
   height-request: 200;
 
   Adw.Breakpoint {
-    condition ('max-width: 400')
+    condition ('max-width: 500')
 
     setters {
       adw_navigation_split_view.collapsed: true;
     }
   }
 
-  content: Adw.ToastOverlay {
-    Adw.NavigationSplitView adw_navigation_split_view {
-      sidebar: Adw.NavigationPage {
-        title: 'Python - PyGObject - GTK';
-
-        child: Adw.ToolbarView {
-          [top]
-          Adw.HeaderBar header_bar {
-            [end]
-            MenuButton {
-              icon-name: 'open-menu-symbolic';
-              menu-model: primary_menu;
-            }
-          }
-
-          content: Box {
-            orientation: vertical;
-            spacing: 12;
-            margin-top: 12;
-            margin-end: 12;
-            margin-bottom: 12;
-            margin-start: 12;
-
-            Button {
-              label: 'Content';
-              action-name: 'navigation.push';
-              action-target: '\'content\'';
-            }
-          };
-        };
-      };
-
-      content: Adw.NavigationPage {
-        title: 'Python - PyGObject - GTK';
-        tag: 'content';
-
-        child: Adw.ToolbarView {
-          [top]
-          Adw.HeaderBar header_bar_content {}
-
-          content: Adw.ToastOverlay {
-            child: Box {
-              orientation: vertical;
-              spacing: 12;
-              margin-top: 12;
-              margin-end: 12;
-              margin-bottom: 12;
-              margin-start: 12;
-
-              Label {
-                label: 'Content';
-              }
-            };
-          };
-        };
-      };
-    }
-  };
-}
-
-menu primary_menu {
-  section {
-    item {
-      label: _('Preferences');
-      action: 'app.preferences';
-    }
-  }
+  content: Adw.NavigationSplitView adw_navigation_split_view {};
 }

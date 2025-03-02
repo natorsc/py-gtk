@@ -718,13 +718,10 @@ Pango tags
 
 #### Adw.NavigationSplitView
 
-![Adw.NavigationSplitView](./docs/images/libadwaita-widgets/navigation-split-view.webp "Adw.NavigationSplitView")
+![Adw.NavigationSplitView](./docs/images/libadwaita-widgets/navigation-split-view.png "Adw.NavigationSplitView")
 
-- [Informações do widget](./docs/widgets-info/AdwNavigationSplitView.md).
 - [Python](./src/libadwaita-widgets/navigation-split-view/MainWindow.py).
-- [GTK Blueprint](./src/libadwaita-widgets/navigation-split-view/ui/MainWindow.blp).
-- [Python load ui](./src/libadwaita-widgets/navigation-split-view/ui/MainWindow.py).
-- [UI](./src/libadwaita-widgets/navigation-split-view/ui/MainWindow.ui).
+- [GTK Blueprint](./src/libadwaita-widgets/navigation-split-view/ui).
 
 ---
 
