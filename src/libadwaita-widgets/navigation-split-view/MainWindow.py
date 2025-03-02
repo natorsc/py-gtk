@@ -27,7 +27,6 @@ class Sidebar(Adw.NavigationPage):
         # Top bar.
         adw_header_bar = Adw.HeaderBar.new()
         adw_toolbar_view.add_top_bar(widget=adw_header_bar)
-        self.set_child = adw_toolbar_view
 
         # Menu buttons.
         menu_button_search = Gtk.Button.new()
