@@ -2,77 +2,56 @@ using Gtk 4.0;
 using Adw 1;
 
 template $ExampleWindow: Adw.ApplicationWindow {
-  title: 'Python - PyGObject - GTK';
+  title: "Python - PyGObject - GTK";
   default-width: 683;
   default-height: 384;
-  width-request: 500;
-  height-request: 300;
+  width-request: 360;
+  height-request: 200;
 
   Adw.Breakpoint {
-    condition ('max-width: 550')
+    condition ("max-width: 550sp")
 
     setters {
-      switcher_bar.reveal: true;
-      header_bar.title-widget: title_widget;
+      adw_view_switcher_bar_bottom.reveal: true;
+      header_bar.title-widget: null;
     }
   }
 
-  content: Adw.ToastOverlay {
-    child: Adw.ToolbarView {
-      [top]
-      Adw.HeaderBar header_bar {
-        title-widget: Adw.ViewSwitcher {
-          stack: stack;
-          policy: wide;
-        };
-      }
-
-      content: Adw.ViewStack stack {
-        Adw.ViewStackPage {
-          name: 'page01';
-          title: 'Python - PyGObject - GTK';
-
-          child: Gtk.Box {
-            orientation: vertical;
-            margin-top: 12;
-            margin-end: 12;
-            margin-bottom: 12;
-            margin-start: 12;
-            spacing: 12;
-
-            Label {
-              label: 'Page 01';
-            }
-          };
-        }
-
-        Adw.ViewStackPage {
-          name: 'page02';
-          title: 'Python - PyGObject - GTK';
-
-          child: Gtk.Box {
-            orientation: vertical;
-            margin-top: 12;
-            margin-end: 12;
-            margin-bottom: 12;
-            margin-start: 12;
-            spacing: 12;
-
-            Label {
-              label: 'Page 02';
-            }
-          };
-        }
+  content: Adw.ToolbarView {
+    [top]
+    Adw.HeaderBar header_bar {
+      title-widget: Adw.ViewSwitcher {
+        stack: adw_view_stack;
+        policy: wide;
       };
+    }
 
-      [bottom]
-      Adw.ViewSwitcherBar switcher_bar {
-        stack: stack;
-      }
-    };
-  };
-}
+    [bottom]
+    Adw.ViewSwitcherBar adw_view_switcher_bar_bottom {
+      stack: adw_view_stack;
+    }
 
-Label title_widget {
-  label: 'Python and GTK: PyGObject libadwaita Adw.ViewStack';
+    content: Adw.ViewStack adw_view_stack {
+      // Page 01.
+      Adw.ViewStackPage {
+        name: "page-01";
+        title: "Page 01";
+        icon-name: "power-profile-performance-rtl-symbolic";
+
+        child: Adw.StatusPage {
+          title: "Page 01";
+        };
+      } // Adw.ViewStackPage.
+      // Page 02.
+      Adw.ViewStackPage {
+        name: "page-02";
+        title: "Page 02";
+        icon-name: "power-profile-performance-symbolic";
+
+        child: Adw.StatusPage {
+          title: "Page 02";
+        };
+      } // Adw.ViewStackPage.
+    }; // adw_view_stack.
+  }; // Adw.ToolbarView.
 }

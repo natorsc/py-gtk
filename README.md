@@ -660,8 +660,7 @@ Pango tags
 
 #### Adw.ViewStack
 
-![Adw.ViewStack](./docs/images/libadwaita-widgets/view-stack.webp "Adw.ViewStack")
+![Adw.ViewStack](./docs/images/libadwaita-widgets/view-stack.png "Adw.ViewStack")
 
-> Todo: Python.
-
+- [Python](./src/libadwaita-widgets/view-stack/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/view-stack/ui).

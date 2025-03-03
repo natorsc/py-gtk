@@ -14,77 +14,71 @@ Adw.init()
 class ExampleWindow(Adw.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-
         self.set_title(title='Python - PyGObject - GTK')
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 3), height=int(768 / 3))
 
-        breakpoint_condition = Adw.BreakpointCondition.new_length(
-            type=Adw.BreakpointConditionLengthType.MAX_WIDTH,
-            value=550,
-            unit=Adw.LengthUnit.PX,
-        )
-
-        title_widget = Gtk.Label.new()
-        title_widget.set_text(str='teste')
-
-        break_point = Adw.Breakpoint.new(condition=breakpoint_condition)
-        # break_point.add_setters(
-        #     objects=[title_widget],
-        #     # names=['switcher_bar.reveal', 'header_bar.title-widget'],
-        #     names=['switcher_bar.reveal'],
-        #     values=[True],
-        # )
-
-        self.add_breakpoint(breakpoint=break_point)
-        print(self.get_current_breakpoint())
-
         adw_toolbar_view = Adw.ToolbarView.new()
-        self.set_content(content=adw_toolbar_view)
-
-        adw_header_bar = Adw.HeaderBar.new()
-        adw_toolbar_view.add_top_bar(widget=adw_header_bar)
-
-        menu_button_model = Gio.Menu()
-        menu_button_model.append(
-            label='Preferences',
-            detailed_action='app.preferences',
-        )
-
-        menu_button = Gtk.MenuButton.new()
-        menu_button.set_icon_name(icon_name='open-menu-symbolic')
-        menu_button.set_menu_model(menu_model=menu_button_model)
-        adw_header_bar.pack_end(child=menu_button)
+        self.set_content(adw_toolbar_view)
 
         adw_view_stack = Adw.ViewStack.new()
         adw_toolbar_view.set_content(content=adw_view_stack)
 
-        vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
-        vbox.set_margin_top(margin=12)
-        vbox.set_margin_end(margin=12)
-        vbox.set_margin_bottom(margin=12)
-        vbox.set_margin_start(margin=12)
+        adw_view_switcher = Adw.ViewSwitcher.new()
+        adw_view_switcher.set_stack(stack=adw_view_stack)
+        adw_view_switcher.set_policy(policy=Adw.ViewSwitcherPolicy.WIDE)
 
-        self.button = Gtk.Button.new_with_label(label='Click here')
-        self.button.set_vexpand(expand=True)
-        self.button.set_valign(align=Gtk.Align.END)
-        vbox.append(child=self.button)
+        adw_view_switcher_bar_bottom = Adw.ViewSwitcherBar.new()
+        adw_view_switcher_bar_bottom.set_stack(stack=adw_view_stack)
+        adw_toolbar_view.add_bottom_bar(widget=adw_view_switcher_bar_bottom)
 
-        page_01 = Adw.ViewStackPage(child=vbox)
-        page_01.set_name(name='page01')
-        page_01.set_title('ViewStackPage')
+        adw_header_bar = Adw.HeaderBar.new()
+        adw_header_bar.set_title_widget(title_widget=adw_view_switcher)
+        adw_toolbar_view.add_top_bar(widget=adw_header_bar)
+
+        # Page 01.
+        adw_status_page_01 = Adw.StatusPage.new()
+        adw_status_page_01.set_title(title='Page 01')
+        adw_view_stack.add_titled_with_icon(
+            child=adw_status_page_01,
+            name='page-01',
+            title='Page 01',
+            icon_name='power-profile-performance-rtl-symbolic',
+        )
+
+        # Page 02.
+        adw_status_page_02 = Adw.StatusPage.new()
+        adw_status_page_02.set_title(title='Page 02')
+
+        adw_view_stack.add_titled_with_icon(
+            child=adw_status_page_02,
+            name='page-02',
+            title='Page 02',
+            icon_name='power-profile-performance-symbolic',
+        )
+
+        breakpoint_condition = Adw.BreakpointCondition.new_length(
+            type=Adw.BreakpointConditionLengthType.MAX_WIDTH,
+            value=500,
+            unit=Adw.LengthUnit.PX,
+        )
+        break_point = Adw.Breakpoint.new(condition=breakpoint_condition)
+        break_point.add_setters(
+            objects=[adw_view_switcher_bar_bottom, adw_header_bar],
+            names=['reveal', 'title-widget'],
+            values=[True, Gtk.Label.new(str=self.get_title())],
+        )
+        self.add_breakpoint(breakpoint=break_point)
 
 
 class ExampleApplication(Adw.Application):
     def __init__(self):
         super().__init__(
-            application_id='br.com.justcode.PyGObject',
+            application_id='nators.com.github.PyGtk',
             flags=Gio.ApplicationFlags.DEFAULT_FLAGS,
         )
 
         self.create_action('quit', self.exit_app, ['<primary>q'])
-        self.create_action('preferences', self.on_preferences_action)
-        self.create_action('toast', self.on_toast_action)
 
     def do_activate(self):
         win = self.props.active_window
@@ -97,15 +91,6 @@ class ExampleApplication(Adw.Application):
 
     def do_shutdown(self):
         Gtk.Application.do_shutdown(self)
-
-    def on_preferences_action(self, action, param):
-        print('Action `app.preferences` was active.')
-
-    def on_toast_action(self, action, param):
-        """It will be activated when clicking the button."""
-        print('[!] action-name [!]')
-        print('Action `app.toast` was active.')
-        print('It will be activated when clicking the button')
 
     def exit_app(self, action, param):
         self.quit()
