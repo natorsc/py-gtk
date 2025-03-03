@@ -1,4 +1,4 @@
-![Creating graphical interfaces with Python (PyGObject) and GTK](./docs/images/python-py-gtk.webp "Creating graphical interfaces with Python (PyGObject) and GTK")
+![Creating graphical interfaces with Python (PyGObject) and GTK](./docs/images/py-gtk.webp "Creating graphical interfaces with Python (PyGObject) and GTK")
 
 <br>
 
