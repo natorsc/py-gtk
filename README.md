@@ -450,12 +450,12 @@ Pango tags
 
 ### Libadwaita
 
-#### Adw.AboutWindow
+#### Adw.AboutDialog
 
-![Adw.AboutWindow](./docs/images/libadwaita-widgets/about-window.webp "Adw.AboutWindow")
+![Adw.AboutDialog](./docs/images/libadwaita-widgets/about-dialog.png "Adw.AboutDialog")
 
-- [Python](./src/libadwaita-widgets/about-window/MainWindow.py).
-- [GTK Blueprint](./src/libadwaita-widgets/about-window/ui).
+- [Python](./src/libadwaita-widgets/about-dialog/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/about-dialog/ui).
 
 ---
 
