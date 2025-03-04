@@ -80,7 +80,6 @@ class Page01(Adw.NavigationPage):
         # Top bar.
         adw_header_bar = Adw.HeaderBar.new()
         adw_toolbar_view.add_top_bar(widget=adw_header_bar)
-        self.set_child = adw_toolbar_view
 
         # Content.
         vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
@@ -154,7 +153,7 @@ class ExampleWindow(Adw.ApplicationWindow):
 class ExampleApplication(Adw.Application):
     def __init__(self):
         super().__init__(
-            application_id='br.com.justcode.PyGObject',
+            application_id='nators.com.github.PyGtk',
             flags=Gio.ApplicationFlags.DEFAULT_FLAGS,
         )
 

@@ -20,15 +20,10 @@ class ExampleWindow(Adw.ApplicationWindow):
         self.set_size_request(width=int(1366 / 3), height=int(768 / 3))
 
         adw_toolbar_view = Adw.ToolbarView.new()
+        self.set_content(adw_toolbar_view)
 
         adw_header_bar = Adw.HeaderBar.new()
         adw_toolbar_view.add_top_bar(widget=adw_header_bar)
-
-        adw_navigation_page = Adw.NavigationPage.new(
-            child=adw_toolbar_view,
-            title='Title page 01',
-        )
-        self.set_content(adw_navigation_page)
 
         vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
         vbox.set_margin_top(margin=12)

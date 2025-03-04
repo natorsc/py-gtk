@@ -27,4 +27,4 @@ quote-style = 'single'
 
 [tool.taskipy.tasks]
 format = 'ruff check . --select I --fix && ruff format .'
-blp = 'blueprint-compiler format -f -n .'
+format_blp = 'blueprint-compiler format -f -n .'

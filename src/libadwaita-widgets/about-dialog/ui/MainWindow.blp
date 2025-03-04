@@ -6,27 +6,22 @@ template $ExampleWindow: Adw.ApplicationWindow {
   default-width: 683;
   default-height: 384;
 
-  content: Adw.NavigationPage {
-    title: "Title page 01";
-    tag: "'page-01'";
+  content: Adw.ToolbarView {
+    [top]
+    Adw.HeaderBar {}
 
-    child: Adw.ToolbarView {
-      [top]
-      Adw.HeaderBar {}
+    content: Gtk.Box {
+      orientation: vertical;
+      spacing: 12;
+      margin-top: 12;
+      margin-end: 12;
+      margin-bottom: 12;
+      margin-start: 12;
 
-      content: Gtk.Box {
-        orientation: vertical;
-        spacing: 12;
-        margin-top: 12;
-        margin-end: 12;
-        margin-bottom: 12;
-        margin-start: 12;
-
-        Gtk.Button {
-          label: "Click me";
-          clicked => $on_button_clicked();
-        }
-      };
+      Gtk.Button {
+        label: "Click me";
+        clicked => $on_button_clicked();
+      }
     };
   };
 }

@@ -5,6 +5,9 @@ import pathlib
 import subprocess
 import sys
 
+BASE_DIR = pathlib.Path(__file__).resolve().parent
+SRC_DIR = BASE_DIR.parent
+
 compiler = 'blueprint-compiler'
 
 platform = sys.platform

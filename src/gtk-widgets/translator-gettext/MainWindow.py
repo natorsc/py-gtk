@@ -99,7 +99,7 @@ class ExampleWindow(Gtk.ApplicationWindow):
 class ExampleApplication(Gtk.Application):
     def __init__(self):
         super().__init__(
-            application_id='br.com.justcode.PyGObject',
+            application_id='nators.com.github.PyGtk',
             flags=Gio.ApplicationFlags.DEFAULT_FLAGS,
         )
 

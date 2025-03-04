@@ -12,13 +12,19 @@ gi.require_version(namespace='Adw', version='1')
 from gi.repository import Adw, Gio, Gtk
 
 BASE_DIR = pathlib.Path(__file__).resolve().parent
-UI = BASE_DIR / 'MainWindow.ui'
+sys.path.append(str(BASE_DIR.parent.parent.parent / 'scripts'))
+
+from blp import blp_to_ui
+
+UI_FILE = BASE_DIR / 'MainWindow.ui'
+BLP_FILE = BASE_DIR / 'MainWindow.blp'
+blp_to_ui(file=BLP_FILE)
 
 
 Adw.init()
 
 
-@Gtk.Template(filename=UI)
+@Gtk.Template(filename=UI_FILE)
 class ExampleWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
 
@@ -29,7 +35,7 @@ class ExampleWindow(Adw.ApplicationWindow):
 class ExampleApplication(Adw.Application):
     def __init__(self):
         super().__init__(
-            application_id='br.com.justcode.PyGObject',
+            application_id='nators.com.github.PyGtk',
             flags=Gio.ApplicationFlags.DEFAULT_FLAGS,
         )
 
