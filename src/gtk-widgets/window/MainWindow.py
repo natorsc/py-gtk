@@ -16,7 +16,7 @@ class NewWindow(Gtk.Window):
         self.set_title(title='Python - PyGObject - GTK')
         self.set_modal(modal=True)
         self.set_default_size(width=int(1366 / 3), height=int(768 / 3))
-        self.set_size_request(width=int(1366 / 3), height=int(768 / 3))
+        self.set_size_request(width=683, height=384)
 
         vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=6)
         vbox.set_margin_top(margin=12)
@@ -39,8 +39,8 @@ class ExampleWindow(Gtk.ApplicationWindow):
         super().__init__(**kwargs)
 
         self.set_title(title='Python - PyGObject - GTK')
-        self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
-        self.set_size_request(width=int(1366 / 3), height=int(768 / 3))
+        self.set_default_size(width=683, height=384)
+        self.set_size_request(width=683, height=384)
 
         header_bar = Gtk.HeaderBar.new()
         self.set_titlebar(titlebar=header_bar)
@@ -75,7 +75,7 @@ class ExampleWindow(Gtk.ApplicationWindow):
 class ExampleApplication(Gtk.Application):
     def __init__(self):
         super().__init__(
-            application_id='nators.com.github.PyGtk',
+            application_id='br.com.justcode.Gtk',
             flags=Gio.ApplicationFlags.DEFAULT_FLAGS,
         )
 

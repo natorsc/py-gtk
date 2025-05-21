@@ -8,11 +8,12 @@ import gi
 
 gi.require_version(namespace='Gtk', version='4.0')
 
-
-from gi.repository import Gio, Gtk
+from gi.repository import Gio, Gtk, Pango, PangoCairo
 
 BASE_DIR = pathlib.Path(__file__).resolve().parent
-PDF_FILE = str(BASE_DIR.joinpath('file-name.pdf'))
+BLP_FILE = BASE_DIR / 'MainWindow.blp'
+UI_FILE = BASE_DIR / 'MainWindow.ui'
+PDF_FILE = str(BASE_DIR / 'file-name.pdf')
 
 TEXT = """<span size="xx-large">Lorem</span>
 Lorem <b>ipsum</b> <span foreground="red">dolor</span> <big>sit</big> amet,
@@ -20,8 +21,14 @@ Lorem <b>ipsum</b> <span foreground="red">dolor</span> <big>sit</big> amet,
 <span background="green">eiusmod</span> tempor incididunt 
 <small>ut</small> <tt>labore</tt> et dolore magna aliqua.\n"""
 
+sys.path.append(str(BASE_DIR.parent.parent.parent / 'scripts'))
 
-@Gtk.Template(filename=str(BASE_DIR.joinpath('MainWindow.ui')))
+from blp import blp_to_ui
+
+blp_to_ui(file=BLP_FILE)
+
+
+@Gtk.Template(filename=UI_FILE)
 class ExampleWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
 
@@ -46,20 +53,6 @@ class ExampleWindow(Gtk.ApplicationWindow):
             markup=TEXT,
             len=-1,
         )
-
-    @Gtk.Template.Callback()
-    def on_begin_print(self, print_operation, print_context):
-        self.pango_layout = print_context.create_pango_layout()
-        self.pango_layout.set_markup(text=TEXT, length=-1)
-        self.pango_layout.set_font_description(
-            desc=Pango.FontDescription('Arial 12'),
-        )
-
-    @Gtk.Template.Callback()
-    def on_draw_page(self, print_operation, print_context, page_nr):
-        cairo_context = print_context.get_cairo_context()
-        cairo_context.set_source_rgb(0, 0, 0)
-        PangoCairo.show_layout(cr=cairo_context, layout=self.pango_layout)
 
     @Gtk.Template.Callback()
     def on_button_open_print_dialog_clicked(self, widget):
@@ -121,6 +114,19 @@ class ExampleWindow(Gtk.ApplicationWindow):
         if response == Gtk.PrintOperationResult.APPLY:
             print('Arquivo exportado com sucesso')
 
+    def on_begin_print(self, print_operation, print_context):
+        font_description = Pango.FontDescription.new()
+        font_description.set_family(family='Adwaita')
+
+        self.pango_layout = print_context.create_pango_layout()
+        self.pango_layout.set_markup(text=TEXT, length=-1)
+        self.pango_layout.set_font_description(desc=font_description)
+
+    def on_draw_page(self, print_operation, print_context, page_nr):
+        cairo_context = print_context.get_cairo_context()
+        cairo_context.set_source_rgb(0, 0, 0)
+        PangoCairo.show_layout(cr=cairo_context, layout=self.pango_layout)
+
     def _page_setup(self):
         paper_size = Gtk.PaperSize.new(name=Gtk.PAPER_NAME_A4)
         page_setup = Gtk.PageSetup.new()
@@ -152,7 +158,7 @@ class ExampleWindow(Gtk.ApplicationWindow):
 class ExampleApplication(Gtk.Application):
     def __init__(self):
         super().__init__(
-            application_id='nators.com.github.PyGtk',
+            application_id='br.com.justcode.Gtk',
             flags=Gio.ApplicationFlags.DEFAULT_FLAGS,
         )
 

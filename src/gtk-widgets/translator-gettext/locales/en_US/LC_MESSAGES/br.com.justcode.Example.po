@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: br.com.justcode.PyGObject\n"
+"Project-Id-Version: br.com.justcode.Gtk\n"
 "Report-Msgid-Bugs-To: e-mail@para-reportar-bugs\n"
 "POT-Creation-Date: 2021-09-27 17:38-0300\n"
 "PO-Revision-Date: 2021-09-27 17:38-0300\n"

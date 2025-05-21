@@ -1,4 +1,4 @@
-![Creating graphical interfaces with Python (PyGObject) and GTK](./docs/images/py-gtk.webp "Creating graphical interfaces with Python (PyGObject) and GTK")
+![Creating graphical interfaces with Python (PyGObject) and GTK](./docs/images/py-gtk.png "Creating graphical interfaces with Python (PyGObject) and GTK")
 
 <br>
 
@@ -53,7 +53,7 @@ https://github.com/sponsors/natorsc/
 
 ### Pix (Brazil)
 
-**Chave**: `b1839493-2afe-484d-9272-82a3e402b36f`
+**Key**: `b1839493-2afe-484d-9272-82a3e402b36f`
 
 ---
 
@@ -111,25 +111,16 @@ https://github.com/sponsors/natorsc/
 
 #### Gtk.ActionBar
 
-![Gtk.ActionBar](./docs/images/gtk-widgets/actionbar.webp "Gtk.ActionBar")
+![Gtk.ActionBar](./docs/images/gtk-widgets/actionbar.png "Gtk.ActionBar")
 
 - [Python](./src/gtk-widgets/actionbar/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/actionbar/ui/MainWindow.blp).
 
 ---
 
-#### Gtk.Application
-
-![Gtk.Application](./docs/images/gtk-widgets/application.webp "Gtk.Application")
-
-- [Python](./src/gtk-widgets/application/MainWindow.py).
-- [GTK Blueprint](./src/gtk-widgets/application/ui).
-
----
-
 #### Gtk.ApplicationWindow
 
-![Gtk.ApplicationWindow](./docs/images/gtk-widgets/application-window.webp "Gtk.ApplicationWindow")
+![Gtk.ApplicationWindow](./docs/images/gtk-widgets/application-window.png "Gtk.ApplicationWindow")
 
 - [Python](./src/gtk-widgets/application-window/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/application-window/ui).
@@ -138,7 +129,7 @@ https://github.com/sponsors/natorsc/
 
 #### Gtk.Box (horizontal)
 
-![Gtk.Box (horizontal)](./docs/images/gtk-widgets/box-horizontal.webp "Gtk.Box (horizontal)")
+![Gtk.Box (horizontal)](./docs/images/gtk-widgets/box-horizontal.png "Gtk.Box (horizontal)")
 
 - [Python](./src/gtk-widgets/box-horizontal/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/box-horizontal/ui).
@@ -147,7 +138,7 @@ https://github.com/sponsors/natorsc/
 
 #### Gtk.Box (vertical)
 
-![Gtk.Box (vertical)](./docs/images/gtk-widgets/box-vertical.webp "Gtk.Box (vertical)")
+![Gtk.Box (vertical)](./docs/images/gtk-widgets/box-vertical.png "Gtk.Box (vertical)")
 
 - [Python](./src/gtk-widgets/box-vertical/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/box-vertical/ui).
@@ -156,7 +147,7 @@ https://github.com/sponsors/natorsc/
 
 #### Gtk.Button
 
-![Gtk.Button](./docs/images/gtk-widgets/button.webp "Gtk.Button")
+![Gtk.Button](./docs/images/gtk-widgets/button.png "Gtk.Button")
 
 - [Python](./src/gtk-widgets/button/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/button/ui).
@@ -165,7 +156,7 @@ https://github.com/sponsors/natorsc/
 
 #### Gtk.Calendar
 
-![Gtk.Calendar](./docs/images/gtk-widgets/calendar.webp "Gtk.Calendar")
+![Gtk.Calendar](./docs/images/gtk-widgets/calendar.png "Gtk.Calendar")
 
 - [Python](./src/gtk-widgets/calendar/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/calendar/ui).
@@ -174,7 +165,7 @@ https://github.com/sponsors/natorsc/
 
 #### Gtk.CheckButton
 
-![Gtk.CheckButton](./docs/images/gtk-widgets/check-button.webp "Gtk.CheckButton")
+![Gtk.CheckButton](./docs/images/gtk-widgets/check-button.png "Gtk.CheckButton")
 
 - [Python](./src/gtk-widgets/check-button/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/check-button/ui).
@@ -183,7 +174,7 @@ https://github.com/sponsors/natorsc/
 
 #### Gtk.CheckButton (radio)
 
-![Gtk.CheckButton (radio)](./docs/images/gtk-widgets/check-button-radio.webp "Gtk.CheckButton (radio)")
+![Gtk.CheckButton (radio)](./docs/images/gtk-widgets/check-button-radio.png "Gtk.CheckButton (radio)")
 
 - [Python](./src/gtk-widgets/check-button-radio/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/check-button-radio/ui).
@@ -192,7 +183,7 @@ https://github.com/sponsors/natorsc/
 
 #### Gtk.ColorDialogButton
 
-![Gtk.ColorDialogButton](./docs/images/gtk-widgets/color-dialog-button.webp "Gtk.ColorDialogButton")
+![Gtk.ColorDialogButton](./docs/images/gtk-widgets/color-dialog-button.png "Gtk.ColorDialogButton")
 
 - [Python](./src/gtk-widgets/color-dialog-button/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/color-dialog-button/ui).
@@ -201,7 +192,7 @@ https://github.com/sponsors/natorsc/
 
 #### Drag and drop
 
-![Gtk.Drag and drop](./docs/images/gtk-widgets/drag-and-drop.webp "Gtk.Drag and drop")
+![Gtk.Drag and drop](./docs/images/gtk-widgets/drag-and-drop.png "Gtk.Drag and drop")
 
 - [Python](./src/gtk-widgets/drag-and-drop/MainWindow.py).
 
@@ -209,7 +200,7 @@ https://github.com/sponsors/natorsc/
 
 #### Gtk.DropDown
 
-![Gtk.DropDown](./docs/images/gtk-widgets/drop-down.webp "Gtk.DropDown")
+![Gtk.DropDown](./docs/images/gtk-widgets/drop-down.png "Gtk.DropDown")
 
 - [Python](./src/gtk-widgets/drop-down/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/drop-down/ui).
@@ -218,7 +209,7 @@ https://github.com/sponsors/natorsc/
 
 #### Gtk.Entry
 
-![Gtk.Entry](./docs/images/gtk-widgets/entry.webp "Gtk.Entry")
+![Gtk.Entry](./docs/images/gtk-widgets/entry.png "Gtk.Entry")
 
 - [Python](./src/gtk-widgets/entry/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/entry/ui).
@@ -227,7 +218,7 @@ https://github.com/sponsors/natorsc/
 
 #### Gtk.FileDialog (folder)
 
-![Gtk.FileDialog (folder)](./docs/images/gtk-widgets/file-dialog-folder.webp "Gtk.FileDialog (folder)")
+![Gtk.FileDialog (folder)](./docs/images/gtk-widgets/file-dialog-folder.png "Gtk.FileDialog (folder)")
 
 - [Python](./src/gtk-widgets/file-dialog-folder/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/file-dialog-folder/ui).
@@ -236,7 +227,7 @@ https://github.com/sponsors/natorsc/
 
 #### Gtk.FileDialog (open)
 
-![Gtk.FileDialog (open)](./docs/images/gtk-widgets/file-dialog-open.webp "Gtk.FileDialog (open)")
+![Gtk.FileDialog (open)](./docs/images/gtk-widgets/file-dialog-open.png "Gtk.FileDialog (open)")
 
 - [Python](/src/gtk-widgets/file-dialog-open/MainWindow.py).
 - [GTK Blueprint](/src/gtk-widgets/file-dialog-open/ui).
@@ -245,7 +236,7 @@ https://github.com/sponsors/natorsc/
 
 #### Gtk.FileDialog (save)
 
-![Gtk.FileDialog (save)](./docs/images/gtk-widgets/file-dialog-save.webp "Gtk.FileDialog (save)")
+![Gtk.FileDialog (save)](./docs/images/gtk-widgets/file-dialog-save.png "Gtk.FileDialog (save)")
 
 - [Python](./src/gtk-widgets/file-dialog-save/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/file-dialog-save/ui).
@@ -254,7 +245,7 @@ https://github.com/sponsors/natorsc/
 
 #### Gtk.Fixed
 
-![Gtk.Fixed](./docs/images/gtk-widgets/fixed.webp "Gtk.Fixed")
+![Gtk.Fixed](./docs/images/gtk-widgets/fixed.png "Gtk.Fixed")
 
 - [Python](./src/gtk-widgets/fixed/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/fixed/ui).
@@ -263,7 +254,7 @@ https://github.com/sponsors/natorsc/
 
 #### Gtk.FlowBox
 
-![Gtk.FlowBox](./docs/images/gtk-widgets/flow-box.webp "Gtk.FlowBox")
+![Gtk.FlowBox](./docs/images/gtk-widgets/flow-box.png "Gtk.FlowBox")
 
 - [Python](./src/gtk-widgets/flow-box/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/flow-box/ui).
@@ -272,7 +263,7 @@ https://github.com/sponsors/natorsc/
 
 #### Gtk.Grid
 
-![Gtk.Grid](./docs/images/gtk-widgets/grid.webp "Gtk.Grid")
+![Gtk.Grid](./docs/images/gtk-widgets/grid.png "Gtk.Grid")
 
 - [Python](./src/gtk-widgets/grid/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/grid/ui).
@@ -281,7 +272,7 @@ https://github.com/sponsors/natorsc/
 
 #### Gtk.HeaderBar
 
-![Gtk.ApplicatHeaderBarion](./docs/images/gtk-widgets/header-bar.webp "Gtk.HeaderBar")
+![Gtk.ApplicatHeaderBarion](./docs/images/gtk-widgets/header-bar.png "Gtk.HeaderBar")
 
 - [Python](./src/gtk-widgets/header-bar/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/header-bar/ui).
@@ -290,7 +281,7 @@ https://github.com/sponsors/natorsc/
 
 #### Gtk.Image
 
-![Gtk.Image](./docs/images/gtk-widgets/image.webp "Gtk.Image")
+![Gtk.Image](./docs/images/gtk-widgets/image.png "Gtk.Image")
 
 - [Python](./src/gtk-widgets/image/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/image/ui).
@@ -299,7 +290,7 @@ https://github.com/sponsors/natorsc/
 
 #### Gtk.ListBox
 
-![Gtk.ListBox](./docs/images/gtk-widgets/list-box.webp "Gtk.ListBox")
+![Gtk.ListBox](./docs/images/gtk-widgets/list-box.png "Gtk.ListBox")
 
 - [Python](./src/gtk-widgets/list-box/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/list-box/ui).
@@ -308,7 +299,7 @@ https://github.com/sponsors/natorsc/
 
 #### Gtk.ListView
 
-![Gtk.ListView](./docs/images/gtk-widgets/list-view.webp "Gtk.ListView")
+![Gtk.ListView](./docs/images/gtk-widgets/list-view.png "Gtk.ListView")
 
 > 🚨 Criar código Python.
 
@@ -319,7 +310,7 @@ https://github.com/sponsors/natorsc/
 
 #### Gtk.MenuButton
 
-![Gtk.MenuButton](./docs/images/gtk-widgets/menu-button.webp "Gtk.MenuButton")
+![Gtk.MenuButton](./docs/images/gtk-widgets/menu-button.png "Gtk.MenuButton")
 
 - [Python](./src/gtk-widgets/menu-button/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/menu-button/ui).
@@ -328,7 +319,7 @@ https://github.com/sponsors/natorsc/
 
 #### Gtk.Overlay
 
-![Gtk.Overlay](./docs/images/gtk-widgets/overlay.webp "Gtk.Overlay")
+![Gtk.Overlay](./docs/images/gtk-widgets/overlay.png "Gtk.Overlay")
 
 - [Python](./src/gtk-widgets/overlay/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/overlay/ui).
@@ -338,7 +329,7 @@ https://github.com/sponsors/natorsc/
 Pango tags
 ==========
 
-![Gtk.Pango tags](./docs/images/gtk-widgets/pango-tags.webp "Gtk.Pango tags")
+![Gtk.Pango tags](./docs/images/gtk-widgets/pango-tags.png "Gtk.Pango tags")
 
 - [Python](./src/gtk-widgets/pango-tags/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/pango-tags/ui).
@@ -347,7 +338,7 @@ Pango tags
 
 #### Gtk.Picture
 
-![Gtk.Picture](./docs/images/gtk-widgets/picture.webp "Gtk.Picture")
+![Gtk.Picture](./docs/images/gtk-widgets/picture.png "Gtk.Picture")
 
 - [Python](./src/gtk-widgets/picture/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/picture/ui).
@@ -356,7 +347,7 @@ Pango tags
 
 #### Gtk.PrintOperation
 
-![Gtk.PrintOperation](./docs/images/gtk-widgets/print-operation.webp "Gtk.PrintOperation")
+![Gtk.PrintOperation](./docs/images/gtk-widgets/print-operation.png "Gtk.PrintOperation")
 
 - [Python](./src/gtk-widgets/print-operation/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/print-operation/ui).
@@ -365,7 +356,7 @@ Pango tags
 
 #### Gtk.SearchBar
 
-![Gtk.SearchBar](./docs/images/gtk-widgets/search-bar.webp "Gtk.SearchBar")
+![Gtk.SearchBar](./docs/images/gtk-widgets/search-bar.png "Gtk.SearchBar")
 
 - [Python](./src/gtk-widgets/search-bar/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/search-bar/ui).
@@ -374,7 +365,7 @@ Pango tags
 
 #### Gtk.ShortcutsWindow
 
-![Gtk.ShortcutsWindow](./docs/images/gtk-widgets/shortcuts-window.webp "Gtk.ShortcutsWindow")
+![Gtk.ShortcutsWindow](./docs/images/gtk-widgets/shortcuts-window.png "Gtk.ShortcutsWindow")
 
 > 🚨 Criar código Python.
 
@@ -384,7 +375,7 @@ Pango tags
 
 #### Signals and slots
 
-![Signals and slots](./docs/images/gtk-widgets/signals-and-slots.webp "Signals and slots")
+![Signals and slots](./docs/images/gtk-widgets/signals-and-slots.png "Signals and slots")
 
 - [Python](./src/gtk-widgets/signals-and-slots/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/signals-and-slots/ui).
@@ -393,7 +384,7 @@ Pango tags
 
 #### Gtk.StackSidebar
 
-![Gtk.StackSidebar](./docs/images/gtk-widgets/stack-sidebar.webp "Gtk.StackSidebar")
+![Gtk.StackSidebar](./docs/images/gtk-widgets/stack-sidebar.png "Gtk.StackSidebar")
 
 - [Python](./src/gtk-widgets/stack-sidebar/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/stack-sidebar/ui).
@@ -402,7 +393,7 @@ Pango tags
 
 #### Gtk.StackSwitcher
 
-![Gtk.StackSwitcher](./docs/images/gtk-widgets/stack-switcher.webp "Gtk.StackSwitcher")
+![Gtk.StackSwitcher](./docs/images/gtk-widgets/stack-switcher.png "Gtk.StackSwitcher")
 
 - [Python](./src/gtk-widgets/stack-switcher/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/stack-switcher/ui).
@@ -411,7 +402,7 @@ Pango tags
 
 #### Gtk.Switch
 
-![Gtk.Switch](./docs/images/gtk-widgets/switch.webp "Gtk.Switch")
+![Gtk.Switch](./docs/images/gtk-widgets/switch.png "Gtk.Switch")
 
 - [Python](./src/gtk-widgets/switch/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/switch/ui).
@@ -430,7 +421,7 @@ Pango tags
 
 #### Gtk.Video
 
-![Gtk.Video](./docs/images/gtk-widgets/video.webp "Gtk.Video")
+![Gtk.Video](./docs/images/gtk-widgets/video.png "Gtk.Video")
 
 - [Python](./src/gtk-widgets/video/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/video/ui).
@@ -439,7 +430,7 @@ Pango tags
 
 #### Gtk.Window
 
-![Gtk.Window](./docs/images/gtk-widgets/window.webp "Gtk.Window")
+![Gtk.Window](./docs/images/gtk-widgets/window.png "Gtk.Window")
 
 - [Python](./src/gtk-widgets/window/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/window/ui).
@@ -461,7 +452,7 @@ Pango tags
 
 #### Adw.ActionRow
 
-![Adw.ActionRow](./docs/images/libadwaita-widgets/action-row.webp "Adw.ActionRow")
+![Adw.ActionRow](./docs/images/libadwaita-widgets/action-row.png "Adw.ActionRow")
 
 - [Python](./src/libadwaita-widgets/action-row/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/action-row/ui).
@@ -470,7 +461,7 @@ Pango tags
 
 #### Adw.Application
 
-![Adw.Application](./docs/images/libadwaita-widgets/application.webp "Adw.Application")
+![Adw.Application](./docs/images/libadwaita-widgets/application.png "Adw.Application")
 
 - [Python](./src/libadwaita-widgets/application/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/application/ui).
@@ -479,7 +470,7 @@ Pango tags
 
 #### Adw.Avatar
 
-![Adw.Avatar](./docs/images/libadwaita-widgets/avatar.webp "Adw.Avatar")
+![Adw.Avatar](./docs/images/libadwaita-widgets/avatar.png "Adw.Avatar")
 
 - [Python](./src/libadwaita-widgets/avatar/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/avatar/ui).
@@ -488,7 +479,7 @@ Pango tags
 
 #### Adw.Banner
 
-![Adw.Banner](./docs/images/libadwaita-widgets/banner.webp "Adw.Banner")
+![Adw.Banner](./docs/images/libadwaita-widgets/banner.png "Adw.Banner")
 
 - [Python](./src/libadwaita-widgets/banner/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/banner/ui).
@@ -497,7 +488,7 @@ Pango tags
 
 #### Adw.ButtonContent
 
-![Adw.ButtonContent](./docs/images/libadwaita-widgets/button-content.webp "Adw.ButtonContent")
+![Adw.ButtonContent](./docs/images/libadwaita-widgets/button-content.png "Adw.ButtonContent")
 
 - [Python](./src/libadwaita-widgets/button-content/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/button-content/ui).
@@ -506,7 +497,7 @@ Pango tags
 
 #### Adw.Carousel
 
-![Adw.Carousel](./docs/images/libadwaita-widgets/carousel.webp "Adw.Carousel")
+![Adw.Carousel](./docs/images/libadwaita-widgets/carousel.png "Adw.Carousel")
 
 - [Python](./src/libadwaita-widgets/carousel/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/carousel/ui).
@@ -515,7 +506,7 @@ Pango tags
 
 #### Adw.CarouselIndicatorDots
 
-![Adw.CarouselIndicatorDots](./docs/images/libadwaita-widgets/carousel-indicator-dots.webp "Adw.CarouselIndicatorDots")
+![Adw.CarouselIndicatorDots](./docs/images/libadwaita-widgets/carousel-indicator-dots.png "Adw.CarouselIndicatorDots")
 
 - [Python](./src/libadwaita-widgets/carousel-indicator-dots/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/carousel-indicator-dots/ui).
@@ -524,7 +515,7 @@ Pango tags
 
 #### Adw.CarouselIndicatorLines
 
-![Adw.CarouselIndicatorLines](./docs/images/libadwaita-widgets/carousel-indicator-lines.webp "Adw.CarouselIndicatorLines")
+![Adw.CarouselIndicatorLines](./docs/images/libadwaita-widgets/carousel-indicator-lines.png "Adw.CarouselIndicatorLines")
 
 - [Python](./src/libadwaita-widgets/carousel-indicator-lines/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/carousel-indicator-lines/ui).
@@ -533,7 +524,7 @@ Pango tags
 
 #### Adw.Clamp
 
-![Adw.Clamp](./docs/images/libadwaita-widgets/clamp.webp "Adw.Clamp")
+![Adw.Clamp](./docs/images/libadwaita-widgets/clamp.png "Adw.Clamp")
 
 - [Python](./src/libadwaita-widgets/clamp/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/clamp/ui).
@@ -542,7 +533,7 @@ Pango tags
 
 #### Adw.ComboRow
 
-![Adw.ComboRow](./docs/images/libadwaita-widgets/combo-row.webp "Adw.ComboRow")
+![Adw.ComboRow](./docs/images/libadwaita-widgets/combo-row.png "Adw.ComboRow")
 
 - [Python](./src/libadwaita-widgets/combo-row/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/combo-row/ui).
@@ -551,7 +542,7 @@ Pango tags
 
 #### Adw.EntryRow
 
-![Adw.EntryRow](./docs/images/libadwaita-widgets/entry-row.webp "Adw.EntryRow")
+![Adw.EntryRow](./docs/images/libadwaita-widgets/entry-row.png "Adw.EntryRow")
 
 - [Python](./src/libadwaita-widgets/entry-row/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/entry-row/ui).
@@ -560,7 +551,7 @@ Pango tags
 
 #### Adw.ExpanderRow
 
-![Adw.ExpanderRow](./docs/images/libadwaita-widgets/expander-row.webp "Adw.ExpanderRow")
+![Adw.ExpanderRow](./docs/images/libadwaita-widgets/expander-row.png "Adw.ExpanderRow")
 
 - [Python](./src/libadwaita-widgets/expander-row/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/expander-row/ui).
@@ -569,7 +560,7 @@ Pango tags
 
 #### Adw.MessageDialog
 
-![Adw.MessageDialog](./docs/images/libadwaita-widgets/message-dialog.webp "Adw.MessageDialog")
+![Adw.MessageDialog](./docs/images/libadwaita-widgets/message-dialog.png "Adw.MessageDialog")
 
 - [Python](./src/libadwaita-widgets/message-dialog/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/message-dialog/ui).
@@ -596,7 +587,7 @@ Pango tags
 
 #### Adw.PasswordEntryRow
 
-![Adw.PasswordEntryRow](./docs/images/libadwaita-widgets/password-entry-row.webp "Adw.PasswordEntryRow")
+![Adw.PasswordEntryRow](./docs/images/libadwaita-widgets/password-entry-row.png "Adw.PasswordEntryRow")
 
 - [Python](./src/libadwaita-widgets/password-entry-row/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/password-entry-row/ui).
@@ -605,7 +596,7 @@ Pango tags
 
 #### Adw.PreferencesPage
 
-![Adw.PreferencesPage](./docs/images/libadwaita-widgets/preferences-page.webp "Adw.PreferencesPage")
+![Adw.PreferencesPage](./docs/images/libadwaita-widgets/preferences-page.png "Adw.PreferencesPage")
 
 - [Python](./src/libadwaita-widgets/preferences-page/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/preferences-page/ui).
@@ -614,7 +605,7 @@ Pango tags
 
 #### Adw.PreferencesWindow
 
-![Adw.PreferencesWindow](./docs/images/libadwaita-widgets/preferences-window.webp "Adw.PreferencesWindow")
+![Adw.PreferencesWindow](./docs/images/libadwaita-widgets/preferences-window.png "Adw.PreferencesWindow")
 
 - [Python](./src/libadwaita-widgets/preferences-window/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/preferences-window/ui).
@@ -623,7 +614,7 @@ Pango tags
 
 #### Adw.SplitButton
 
-![Adw.SplitButton](./docs/images/libadwaita-widgets/split-button.webp "Adw.SplitButton")
+![Adw.SplitButton](./docs/images/libadwaita-widgets/split-button.png "Adw.SplitButton")
 
 - [Python](./src/libadwaita-widgets/split-button/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/split-button/ui).
@@ -632,7 +623,7 @@ Pango tags
 
 #### Adw.StatusPage
 
-![Adw.StatusPage](./docs/images/libadwaita-widgets/status-page.webp "Adw.StatusPage")
+![Adw.StatusPage](./docs/images/libadwaita-widgets/status-page.png "Adw.StatusPage")
 
 - [Python](./src/libadwaita-widgets/status-page/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/status-page/ui).
@@ -641,7 +632,7 @@ Pango tags
 
 #### Adw.Toast
 
-![Adw.Toast](./docs/images/libadwaita-widgets/toast.webp "Adw.Toast")
+![Adw.Toast](./docs/images/libadwaita-widgets/toast.png "Adw.Toast")
 
 - [Python](./src/libadwaita-widgets/toast/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/toast/ui).
@@ -652,7 +643,7 @@ Pango tags
 
 > Todo: GTK Blueprint.
 
-![Adw.ToolbarView](./docs/images/libadwaita-widgets/toolbar-view.webp "Adw.ToolbarView")
+![Adw.ToolbarView](./docs/images/libadwaita-widgets/toolbar-view.png "Adw.ToolbarView")
 
 - [Python](./src/libadwaita-widgets/toolbar-view/MainWindow.py).
 

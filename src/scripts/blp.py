@@ -15,7 +15,7 @@ if platform == 'win32':
     compiler = 'python3 C:\\msys64\\mingw64\\bin\\blueprint-compiler'
 
 
-def blp_to_ui(file: pathlib) -> None:
+def blp_to_ui(file):
     print('[[!] Converting (blp -> ui), please wait... [!]')
     output = file.parent.joinpath(f'{file.stem}.ui')
     try:

@@ -1,7 +1,7 @@
 using Gtk 4.0;
 
 template $ExampleWindow: Gtk.ApplicationWindow {
-  title: 'Python - PyGObject - GTK';
+  title: "Python - PyGObject - GTK";
   default-width: 683;
   default-height: 384;
 
@@ -9,7 +9,7 @@ template $ExampleWindow: Gtk.ApplicationWindow {
   Gtk.HeaderBar header_bar {
     [end]
     Gtk.MenuButton {
-      icon-name: 'open-menu-symbolic';
+      icon-name: "open-menu-symbolic";
       menu-model: primary_menu;
     }
   }
@@ -18,8 +18,8 @@ template $ExampleWindow: Gtk.ApplicationWindow {
 menu primary_menu {
   section {
     item {
-      label: _('Preferences');
-      action: 'app.preferences';
+      label: _("Preferences");
+      action: "app.preferences";
     }
   }
 }

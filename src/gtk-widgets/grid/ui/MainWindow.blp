@@ -1,7 +1,7 @@
 using Gtk 4.0;
 
 template $ExampleWindow: Gtk.ApplicationWindow {
-  title: 'Python - PyGObject - GTK';
+  title: "Python - PyGObject - GTK";
   default-width: 683;
   default-height: 384;
 
@@ -9,7 +9,7 @@ template $ExampleWindow: Gtk.ApplicationWindow {
   Gtk.HeaderBar header_bar {
     [end]
     Gtk.MenuButton {
-      icon-name: 'open-menu-symbolic';
+      icon-name: "open-menu-symbolic";
       menu-model: primary_menu;
     }
   }
@@ -23,59 +23,59 @@ template $ExampleWindow: Gtk.ApplicationWindow {
     column-spacing: 12;
 
     Gtk.Button {
-      label: 'Button 01';
+      label: "Button 01";
 
       layout {
-        column: '0';
-        row: '0';
+        column: "0";
+        row: "0";
       }
     }
 
     Gtk.Button {
-      label: 'Button 02';
+      label: "Button 02";
 
       layout {
-        column: '1';
-        row: '0';
-        column-span: '2';
+        column: "1";
+        row: "0";
+        column-span: "2";
       }
     }
 
     Gtk.Button {
-      label: 'Button 03';
+      label: "Button 03";
 
       layout {
-        column: '0';
-        row: '1';
-        row-span: '2';
+        column: "0";
+        row: "1";
+        row-span: "2";
       }
     }
 
     Gtk.Button {
-      label: 'Button 04';
+      label: "Button 04";
 
       layout {
-        column: '1';
-        row: '1';
-        column-span: '2';
+        column: "1";
+        row: "1";
+        column-span: "2";
       }
     }
 
     Gtk.Button {
-      label: 'Button 05';
+      label: "Button 05";
 
       layout {
-        column: '1';
-        row: '2';
+        column: "1";
+        row: "2";
       }
     }
 
     Gtk.Button {
-      label: 'Button 06';
+      label: "Button 06";
 
       layout {
-        column: '2';
-        row: '2';
+        column: "2";
+        row: "2";
       }
     }
   }
@@ -84,8 +84,8 @@ template $ExampleWindow: Gtk.ApplicationWindow {
 menu primary_menu {
   section {
     item {
-      label: _('Preferences');
-      action: 'app.preferences';
+      label: _("Preferences");
+      action: "app.preferences";
     }
   }
 }

@@ -40,7 +40,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
             </child>
             <child>
               <object class="GtkButton">
-                <property name="icon-name">call-stop-symbolicc</property>
+                <property name="icon-name">call-stop-symbolic</property>
                 <signal name="clicked" handler="on_button_clicked"/>
               </object>
             </child>

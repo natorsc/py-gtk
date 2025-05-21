@@ -31,7 +31,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
         <child>
           <object class="GtkDropDown">
             <property name="model">brazilian_states</property>
-            <property name="selected">2</property>
+            <property name="selected">1</property>
             <signal name="notify::selected-item" handler="on_selected_item"/>
           </object>
         </child>
@@ -40,6 +40,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
   </template>
   <object class="GtkStringList" id="brazilian_states">
     <items>
+      <item>Select</item>
       <item>Acre</item>
       <item>Alagoas</item>
       <item>Amapá</item>

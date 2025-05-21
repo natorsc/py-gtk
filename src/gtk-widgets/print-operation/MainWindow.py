@@ -10,7 +10,8 @@ gi.require_version(namespace='Gtk', version='4.0')
 
 from gi.repository import Gio, Gtk, Pango, PangoCairo
 
-PDF_FILE = str(BASE_DIR.joinpath('file-name.pdf'))
+BASE_DIR = pathlib.Path(__file__).resolve().parent
+PDF_FILE = str(BASE_DIR / 'file-name.pdf')
 
 TEXT = """<span size="xx-large">Lorem</span>
 Lorem <b>ipsum</b> <span foreground="red">dolor</span> <big>sit</big> amet,
@@ -26,8 +27,8 @@ class ExampleWindow(Gtk.ApplicationWindow):
         super().__init__(**kwargs)
 
         self.set_title(title='Python - PyGObject - GTK')
-        self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
-        self.set_size_request(width=int(1366 / 3), height=int(768 / 3))
+        self.set_default_size(width=683, height=384)
+        self.set_size_request(width=683, height=384)
 
         header_bar = Gtk.HeaderBar.new()
         self.set_titlebar(titlebar=header_bar)
@@ -107,10 +108,13 @@ class ExampleWindow(Gtk.ApplicationWindow):
         hbox.append(child=button_export_pdf)
 
     def on_begin_print(self, print_operation, print_context):
+        font_description = Pango.FontDescription.new()
+        font_description.set_family(family='Adwaita')
+
         self.pango_layout = print_context.create_pango_layout()
         self.pango_layout.set_markup(text=TEXT, length=-1)
         self.pango_layout.set_font_description(
-            desc=Pango.FontDescription('Arial 12'),
+            desc=font_description,
         )
 
     def on_draw_page(self, print_operation, print_context, page_nr):
@@ -205,7 +209,7 @@ class ExampleWindow(Gtk.ApplicationWindow):
 class ExampleApplication(Gtk.Application):
     def __init__(self):
         super().__init__(
-            application_id='nators.com.github.PyGtk',
+            application_id='br.com.justcode.Gtk',
             flags=Gio.ApplicationFlags.DEFAULT_FLAGS,
         )
 

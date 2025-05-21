@@ -2,7 +2,7 @@ using Gtk 4.0;
 using Adw 1;
 
 template $ExampleWindow: Adw.ApplicationWindow {
-  title: 'Python - PyGObject - GTK';
+  title: "Python - PyGObject - GTK";
   default-width: 683;
   default-height: 384;
 
@@ -12,7 +12,7 @@ template $ExampleWindow: Adw.ApplicationWindow {
       Adw.HeaderBar header_bar {
         [end]
         MenuButton {
-          icon-name: 'open-menu-symbolic';
+          icon-name: "open-menu-symbolic";
           menu-model: primary_menu;
         }
       }
@@ -31,8 +31,8 @@ template $ExampleWindow: Adw.ApplicationWindow {
           clicked => $on_split_button_clicked();
 
           child: Adw.ButtonContent {
-            icon-name: 'document-open-symbolic';
-            label: _('_Open');
+            icon-name: "document-open-symbolic";
+            label: _("_Open");
             use-underline: true;
           };
         }
@@ -48,36 +48,36 @@ PopoverMenu popover_menu {
 menu adw_split_button_menu {
   section {
     item {
-      label: _('Item 01');
-      action: 'app.split-button-menu-item-activate';
+      label: _("Item 01");
+      action: "app.split-button-menu-item-activate";
     }
 
     submenu {
-      label: _('Submenu');
+      label: _("Submenu");
 
       item {
-        label: _('Item 02');
-        action: 'app.split-button-menu-item-activate';
+        label: _("Item 02");
+        action: "app.split-button-menu-item-activate";
       }
     }
 
     section {
-      label: _('Editar');
+      label: _("Editar");
 
       item {
-        label: _('Item 03');
-        action: 'app.split-button-menu-item-activate';
+        label: _("Item 03");
+        action: "app.split-button-menu-item-activate";
       }
 
       item {
-        label: _('Item 04');
-        action: 'app.split-button-menu-item-activate';
+        label: _("Item 04");
+        action: "app.split-button-menu-item-activate";
       }
     }
 
     item {
-      label: _('Sair');
-      action: 'app.quit';
+      label: _("Sair");
+      action: "app.quit";
     }
   }
 }
@@ -85,8 +85,8 @@ menu adw_split_button_menu {
 menu primary_menu {
   section {
     item {
-      label: _('Preferences');
-      action: 'app.preferences';
+      label: _("Preferences");
+      action: "app.preferences";
     }
   }
 }

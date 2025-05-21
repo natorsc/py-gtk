@@ -32,9 +32,6 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
         <child>
           <object class="GtkListBox">
             <property name="selection-mode">0</property>
-            <style>
-              <class name="boxed-list"/>
-            </style>
             <child>
               <object class="GtkListBoxRow">
                 <property name="selectable">false</property>
@@ -127,17 +124,15 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
         <child>
           <object class="GtkListBox">
             <property name="selection-mode">1</property>
-            <property name="show-separators">true</property>
             <property name="vexpand">true</property>
             <signal name="row-activated" handler="on_row_clicked"/>
-            <style>
-              <class name="boxed-list"/>
-            </style>
             <child>
               <object class="GtkListBoxRow">
                 <child>
                   <object class="GtkLabel">
                     <property name="label">Line 01</property>
+                    <property name="margin-bottom">6</property>
+                    <property name="margin-top">6</property>
                   </object>
                 </child>
               </object>
@@ -147,6 +142,8 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
                 <child>
                   <object class="GtkLabel">
                     <property name="label">Line 02</property>
+                    <property name="margin-bottom">6</property>
+                    <property name="margin-top">6</property>
                   </object>
                 </child>
               </object>
@@ -156,6 +153,8 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
                 <child>
                   <object class="GtkLabel">
                     <property name="label">Line 03</property>
+                    <property name="margin-bottom">6</property>
+                    <property name="margin-top">6</property>
                   </object>
                 </child>
               </object>

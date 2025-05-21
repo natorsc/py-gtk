@@ -8,13 +8,20 @@ import gi
 
 gi.require_version(namespace='Gtk', version='4.0')
 
-
 from gi.repository import Gio, Gtk
 
 BASE_DIR = pathlib.Path(__file__).resolve().parent
+BLP_FILE = BASE_DIR / 'MainWindow.blp'
+UI_FILE = BASE_DIR / 'MainWindow.ui'
+
+sys.path.append(str(BASE_DIR.parent.parent.parent / 'scripts'))
+
+from blp import blp_to_ui
+
+blp_to_ui(file=BLP_FILE)
 
 
-@Gtk.Template(filename=str(BASE_DIR.joinpath('MainWindow.ui')))
+@Gtk.Template(filename=UI_FILE)
 class ExampleWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
 
@@ -25,13 +32,14 @@ class ExampleWindow(Gtk.ApplicationWindow):
     def on_selected_item(self, drop_down, g_param_object):
         string_object = drop_down.get_selected_item()
         index = drop_down.get_selected()
-        print(f'Position: {index} - value: {string_object.get_string()}')
+        if index != 0:
+            print(f'Position: {index} - value: {string_object.get_string()}')
 
 
 class ExampleApplication(Gtk.Application):
     def __init__(self):
         super().__init__(
-            application_id='nators.com.github.PyGtk',
+            application_id='br.com.justcode.Gtk',
             flags=Gio.ApplicationFlags.DEFAULT_FLAGS,
         )
 

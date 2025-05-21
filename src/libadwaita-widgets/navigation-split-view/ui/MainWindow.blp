@@ -2,14 +2,14 @@ using Gtk 4.0;
 using Adw 1;
 
 template $ExampleWindow: Adw.ApplicationWindow {
-  title: 'Python - PyGObject - GTK';
+  title: "Python - PyGObject - GTK";
   default-width: 683;
   default-height: 384;
   width-request: 280;
   height-request: 200;
 
   Adw.Breakpoint {
-    condition ('max-width: 500')
+    condition ("max-width: 500")
 
     setters {
       adw_navigation_split_view.collapsed: true;

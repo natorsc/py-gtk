@@ -2,7 +2,7 @@ using Gtk 4.0;
 using Gio 2.0;
 
 template $ExampleWindow: Gtk.ApplicationWindow {
-  title: 'Python - PyGObject - GTK';
+  title: "Python - PyGObject - GTK";
   default-width: 683;
   default-height: 384;
 
@@ -10,7 +10,7 @@ template $ExampleWindow: Gtk.ApplicationWindow {
   Gtk.HeaderBar header_bar {
     [end]
     Gtk.MenuButton {
-      icon-name: 'open-menu-symbolic';
+      icon-name: "open-menu-symbolic";
       menu-model: primary_menu;
     }
   }
@@ -24,54 +24,54 @@ template $ExampleWindow: Gtk.ApplicationWindow {
     spacing: 12;
 
     Gtk.Button {
-      label: 'Select file';
+      label: "Select file";
       clicked => $on_button_select_file_clicked();
     }
 
     Gtk.Button {
-      label: 'Select files';
+      label: "Select files";
       clicked => $on_button_select_files_clicked();
     }
   }
 }
 
 Gtk.FileFilter filter_all_files {
-  name: 'All';
+  name: "All";
 
   patterns [
-    '*',
+    "*",
   ]
 
   suffixes [
-    '*',
+    "*",
   ]
 }
 
 Gtk.FileFilter filter_py_files {
   mime-types [
-    'text/x-python',
+    "text/x-python",
   ]
 
   patterns [
-    '*.py',
+    "*.py",
   ]
 
   suffixes [
-    'py',
+    "py",
   ]
 }
 
 Gtk.FileFilter filter_txt_files {
   mime-types [
-    'text/plain',
+    "text/plain",
   ]
 
   patterns [
-    '*.txt',
+    "*.txt",
   ]
 
   suffixes [
-    'txt',
+    "txt",
   ]
 }
 
@@ -82,8 +82,8 @@ Gio.ListStore gio_list_store {
 menu primary_menu {
   section {
     item {
-      label: _('Preferences');
-      action: 'app.preferences';
+      label: _("Preferences");
+      action: "app.preferences";
     }
   }
 }

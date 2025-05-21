@@ -1,7 +1,7 @@
 using Gtk 4.0;
 
 template $ExampleWindow: Gtk.ApplicationWindow {
-  title: 'Python - PyGObject - GTK';
+  title: "Python - PyGObject - GTK";
   default-width: 683;
   default-height: 384;
 
@@ -9,7 +9,7 @@ template $ExampleWindow: Gtk.ApplicationWindow {
   Gtk.HeaderBar header_bar {
     [end]
     Gtk.MenuButton {
-      icon-name: 'open-menu-symbolic';
+      icon-name: "open-menu-symbolic";
       menu-model: primary_menu;
     }
   }
@@ -28,45 +28,45 @@ template $ExampleWindow: Gtk.ApplicationWindow {
 
     Gtk.Stack stack {
       Gtk.StackPage {
-        name: 'page1';
-        title: 'Python - PyGObject - GTK';
+        name: "page1";
+        title: "Python - PyGObject - GTK";
 
         child: Gtk.Box {
           orientation: vertical;
           spacing: 6;
 
           Gtk.Button {
-            label: 'Button 01';
+            label: "Button 01";
           }
 
           Gtk.Button {
-            label: 'Button 02';
+            label: "Button 02";
           }
 
           Gtk.Button {
-            label: 'Button 03';
+            label: "Button 03";
           }
         };
       }
 
       Gtk.StackPage {
-        name: 'page2';
-        title: 'Python - PyGObject - GTK';
+        name: "page2";
+        title: "Python - PyGObject - GTK";
 
         child: Gtk.Box {
           orientation: vertical;
           spacing: 6;
 
           Gtk.Label {
-            label: 'Line 01';
+            label: "Line 01";
           }
 
           Gtk.Label {
-            label: 'Line 02';
+            label: "Line 02";
           }
 
           Gtk.Label {
-            label: 'Line 03';
+            label: "Line 03";
           }
         };
       }
@@ -77,8 +77,8 @@ template $ExampleWindow: Gtk.ApplicationWindow {
 menu primary_menu {
   section {
     item {
-      label: _('Preferences');
-      action: 'app.preferences';
+      label: _("Preferences");
+      action: "app.preferences";
     }
   }
 }

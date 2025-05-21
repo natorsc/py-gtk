@@ -16,8 +16,8 @@ class ExampleWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
 
         self.set_title(title='Python - PyGObject - GTK')
-        self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
-        self.set_size_request(width=int(1366 / 3), height=int(768 / 3))
+        self.set_default_size(width=683, height=384)
+        self.set_size_request(width=683, height=384)
 
         self.adw_toast_overlay = Adw.ToastOverlay.new()
         self.set_content(content=self.adw_toast_overlay)
@@ -77,7 +77,7 @@ class ExampleWindow(Adw.ApplicationWindow):
 class ExampleApplication(Adw.Application):
     def __init__(self):
         super().__init__(
-            application_id='nators.com.github.PyGtk',
+            application_id='br.com.justcode.Gtk',
             flags=Gio.ApplicationFlags.DEFAULT_FLAGS,
         )
 

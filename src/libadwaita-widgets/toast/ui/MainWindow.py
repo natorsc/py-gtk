@@ -50,7 +50,7 @@ class ExampleWindow(Adw.ApplicationWindow):
 class ExampleApplication(Adw.Application):
     def __init__(self):
         super().__init__(
-            application_id='nators.com.github.PyGtk',
+            application_id='br.com.justcode.Gtk',
             flags=Gio.ApplicationFlags.DEFAULT_FLAGS,
         )
 

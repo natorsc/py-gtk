@@ -8,20 +8,23 @@ import gi
 
 gi.require_version(namespace='Gtk', version='4.0')
 
-
 from gi.repository import Gio, Gtk
 
 BASE_DIR = pathlib.Path(__file__).resolve().parent
-CUSTOM_IMAGE = str(
-    BASE_DIR.parent.parent.parent.joinpath(
-        'data',
-        'icons',
-        'br.com.justcode.PyGObject.png',
-    )
-)
+BLP_FILE = BASE_DIR / 'MainWindow.blp'
+UI_FILE = BASE_DIR / 'MainWindow.ui'
+
+SRC_DIR = BASE_DIR.parent.parent.parent
+CUSTOM_IMAGE = str(SRC_DIR / 'data' / 'icons' / 'icon-512x512.png')
+
+sys.path.append(str(SRC_DIR / 'scripts'))
+
+from blp import blp_to_ui
+
+blp_to_ui(file=BLP_FILE)
 
 
-@Gtk.Template(filename=str(BASE_DIR.joinpath('MainWindow.ui')))
+@Gtk.Template(filename=UI_FILE)
 class ExampleWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
 
@@ -36,7 +39,7 @@ class ExampleWindow(Gtk.ApplicationWindow):
 class ExampleApplication(Gtk.Application):
     def __init__(self):
         super().__init__(
-            application_id='nators.com.github.PyGtk',
+            application_id='br.com.justcode.Gtk',
             flags=Gio.ApplicationFlags.DEFAULT_FLAGS,
         )
 

@@ -2,7 +2,7 @@ using Gtk 4.0;
 using Adw 1;
 
 template $ExampleWindow: Adw.ApplicationWindow {
-  title: 'Python - PyGObject - GTK';
+  title: "Python - PyGObject - GTK";
   default-width: 683;
   default-height: 384;
 
@@ -12,7 +12,7 @@ template $ExampleWindow: Adw.ApplicationWindow {
       Adw.HeaderBar header_bar {
         [end]
         MenuButton {
-          icon-name: 'open-menu-symbolic';
+          icon-name: "open-menu-symbolic";
           menu-model: primary_menu;
         }
       }
@@ -31,8 +31,8 @@ template $ExampleWindow: Adw.ApplicationWindow {
           clicked => $on_button_clicked();
 
           child: Adw.ButtonContent {
-            icon-name: 'document-open-symbolic';
-            label: _('Open');
+            icon-name: "document-open-symbolic";
+            label: _("Open");
             use-underline: true;
           };
         }
@@ -44,8 +44,8 @@ template $ExampleWindow: Adw.ApplicationWindow {
 menu primary_menu {
   section {
     item {
-      label: _('Preferences');
-      action: 'app.preferences';
+      label: _("Preferences");
+      action: "app.preferences";
     }
   }
 }

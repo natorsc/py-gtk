@@ -8,44 +8,45 @@ gi.require_version(namespace='Gtk', version='4.0')
 
 from gi.repository import Gio, Gtk
 
+BRAZILIAN_STATES = [
+    'Select',
+    'Acre',
+    'Alagoas',
+    'Amapá',
+    'Amazonas',
+    'Bahia',
+    'Ceará',
+    'Distrito Federal',
+    'Espírito Santo',
+    'Goiás',
+    'Maranhão',
+    'Mato Grosso',
+    'Mato Grosso do Sul',
+    'Minas Gerais',
+    'Pará',
+    'Paraíba',
+    'Paraná',
+    'Pernambuco',
+    'Piauí',
+    'Rio de Janeiro',
+    'Rio Grande do Norte',
+    'Rio Grande do Sul',
+    'Rondônia',
+    'Roraima',
+    'Santa Catarina',
+    'São Paulo',
+    'Sergipe',
+    'Tocantins',
+]
+
 
 class ExampleWindow(Gtk.ApplicationWindow):
-    brazilian_states = [
-        'Acre',
-        'Alagoas',
-        'Amapá',
-        'Amazonas',
-        'Bahia',
-        'Ceará',
-        'Distrito Federal',
-        'Espírito Santo',
-        'Goiás',
-        'Maranhão',
-        'Mato Grosso',
-        'Mato Grosso do Sul',
-        'Minas Gerais',
-        'Pará',
-        'Paraíba',
-        'Paraná',
-        'Pernambuco',
-        'Piauí',
-        'Rio de Janeiro',
-        'Rio Grande do Norte',
-        'Rio Grande do Sul',
-        'Rondônia',
-        'Roraima',
-        'Santa Catarina',
-        'São Paulo',
-        'Sergipe',
-        'Tocantins',
-    ]
-
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
         self.set_title(title='Python - PyGObject - GTK')
-        self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
-        self.set_size_request(width=int(1366 / 3), height=int(768 / 3))
+        self.set_default_size(width=683, height=384)
+        self.set_size_request(width=683, height=384)
 
         header_bar = Gtk.HeaderBar.new()
         self.set_titlebar(titlebar=header_bar)
@@ -69,7 +70,7 @@ class ExampleWindow(Gtk.ApplicationWindow):
         self.set_child(child=vbox)
 
         drop_down = Gtk.DropDown.new_from_strings(
-            strings=self.brazilian_states,
+            strings=BRAZILIAN_STATES,
         )
         drop_down.set_selected(position=1)
         drop_down.connect('notify::selected-item', self.on_selected_item)
@@ -79,13 +80,14 @@ class ExampleWindow(Gtk.ApplicationWindow):
     def on_selected_item(self, drop_down, g_param_object):
         string_object = drop_down.get_selected_item()
         index = drop_down.get_selected()
-        print(f'Position: {index} - value: {string_object.get_string()}')
+        if index != 0:
+            print(f'Position: {index} - value: {string_object.get_string()}')
 
 
 class ExampleApplication(Gtk.Application):
     def __init__(self):
         super().__init__(
-            application_id='nators.com.github.PyGtk',
+            application_id='br.com.justcode.Gtk',
             flags=Gio.ApplicationFlags.DEFAULT_FLAGS,
         )
 

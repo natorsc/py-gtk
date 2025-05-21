@@ -69,10 +69,6 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
     </child>
   </template>
   <object class="GtkTextBuffer" id="text_buffer"></object>
-  <object class="GtkPrintOperation" id="print_operation">
-    <signal name="begin-print" handler="on_begin_print"/>
-    <signal name="draw-page" handler="on_draw_page"/>
-  </object>
   <menu id="primary_menu">
     <section>
       <item>

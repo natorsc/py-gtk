@@ -2,14 +2,14 @@ using Gtk 4.0;
 using Adw 1;
 
 template $MessageDialog: Adw.MessageDialog {
-  heading: _('Dialog header');
-  body: _('Body of the dialog window, you can use markup.');
-  default-response: 'OK';
-  close-response: 'Cancelar';
+  heading: _("Dialog header");
+  body: _("Body of the dialog window, you can use markup.");
+  default-response: "OK";
+  close-response: "Cancelar";
   response => $dialog_response();
 
   responses [
-    cancel: _('_Cancelar') destructive,
-    ok: _('_OK') suggested,
+    cancel: _("_Cancelar") destructive,
+    ok: _("_OK") suggested,
   ]
 }

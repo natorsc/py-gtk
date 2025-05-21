@@ -1,7 +1,7 @@
 using Gtk 4.0;
 
 template $ExampleWindow: Gtk.ApplicationWindow {
-  title: 'Python - PyGObject - GTK';
+  title: "Python - PyGObject - GTK";
   default-width: 683;
   default-height: 384;
 
@@ -9,7 +9,7 @@ template $ExampleWindow: Gtk.ApplicationWindow {
   Gtk.HeaderBar header_bar {
     [end]
     Gtk.MenuButton {
-      icon-name: 'open-menu-symbolic';
+      icon-name: "open-menu-symbolic";
       menu-model: primary_menu;
     }
   }
@@ -24,7 +24,7 @@ template $ExampleWindow: Gtk.ApplicationWindow {
     spacing: 12;
 
     Gtk.Label {
-      label: 'Click on the Button to select a color.';
+      label: "Click on the Button to select a color.";
     }
 
     Gtk.ColorDialogButton {
@@ -37,15 +37,15 @@ template $ExampleWindow: Gtk.ApplicationWindow {
 }
 
 Gtk.ColorDialog color_dialog {
-  title: 'Python - PyGObject - GTK';
+  title: "Python - PyGObject - GTK";
   modal: true;
 }
 
 menu primary_menu {
   section {
     item {
-      label: _('Preferences');
-      action: 'app.preferences';
+      label: _("Preferences");
+      action: "app.preferences";
     }
   }
 }

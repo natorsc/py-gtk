@@ -10,15 +10,14 @@ from gi.repository import Gio, Gtk
 
 
 class ExampleWindow(Gtk.ApplicationWindow):
-    # Dados que serão inseridos nas linhas do list_box_02.
     itens = ['Item 01', 'Item 02', 'Item 03']
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
         self.set_title(title='Python - PyGObject - GTK')
-        self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
-        self.set_size_request(width=int(1366 / 3), height=int(768 / 3))
+        self.set_default_size(width=683, height=384)
+        self.set_size_request(width=683, height=384)
 
         header_bar = Gtk.HeaderBar.new()
         self.set_titlebar(titlebar=header_bar)
@@ -46,7 +45,6 @@ class ExampleWindow(Gtk.ApplicationWindow):
         list_box_01.set_selection_mode(mode=Gtk.SelectionMode.NONE)
         vbox.append(child=list_box_01)
 
-        # Loop para criar os widgets.
         for n in range(1, 4):
             list_box_row = Gtk.ListBoxRow.new()
             list_box_row.set_selectable(selectable=False)
@@ -54,7 +52,7 @@ class ExampleWindow(Gtk.ApplicationWindow):
             hbox = Gtk.Box.new(
                 orientation=Gtk.Orientation.HORIZONTAL, spacing=0
             )
-            # Adicionando container na linha
+
             list_box_row.set_child(child=hbox)
 
             label = Gtk.Label.new(str=f'Line 0{n}')
@@ -75,12 +73,10 @@ class ExampleWindow(Gtk.ApplicationWindow):
 
             list_box_01.append(child=list_box_row)
 
-        # Criando um segundo ListBox
         list_box_02 = Gtk.ListBox.new()
         list_box_02.connect('row-activated', self.on_row_clicked)
         vbox.append(child=list_box_02)
 
-        # Loop para criar as linhas.
         for item in self.itens:
             label = Gtk.Label.new(str=item)
             label.set_margin_top(6)
@@ -94,7 +90,7 @@ class ExampleWindow(Gtk.ApplicationWindow):
 class ExampleApplication(Gtk.Application):
     def __init__(self):
         super().__init__(
-            application_id='nators.com.github.PyGtk',
+            application_id='br.com.justcode.Gtk',
             flags=Gio.ApplicationFlags.DEFAULT_FLAGS,
         )
 
