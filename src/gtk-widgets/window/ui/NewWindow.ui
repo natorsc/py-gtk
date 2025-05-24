@@ -9,8 +9,8 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
   <template class="NewWindow" parent="GtkWindow">
     <property name="title">Python - PyGObject - GTK</property>
     <property name="modal">true</property>
-    <property name="default-width">455</property>
-    <property name="default-height">256</property>
+    <property name="default-width">600</property>
+    <property name="default-height">300</property>
     <child>
       <object class="GtkBox">
         <property name="orientation">1</property>

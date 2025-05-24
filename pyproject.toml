@@ -3,7 +3,7 @@ name = "py-gtk"
 version = "0.1.0"
 description = "Creating graphical interfaces with Python (PyGObject) and GTK"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.12,<=3.14"
 dependencies = [
     "pygobject>=3.52.3",
 ]

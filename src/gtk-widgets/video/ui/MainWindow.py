@@ -11,8 +11,11 @@ gi.require_version(namespace='Gtk', version='4.0')
 from gi.repository import Gio, Gtk
 
 BASE_DIR = pathlib.Path(__file__).resolve().parent
+SRC_DIR = BASE_DIR.parent.parent.parent
+VIDEO = str(SRC_DIR / 'data' / 'videos' / 'video.mp4')
 BLP_FILE = BASE_DIR / 'MainWindow.blp'
 UI_FILE = BASE_DIR / 'MainWindow.ui'
+
 
 sys.path.append(str(BASE_DIR.parent.parent.parent / 'scripts'))
 

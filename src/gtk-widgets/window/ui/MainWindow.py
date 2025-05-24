@@ -12,16 +12,20 @@ from gi.repository import Gio, Gtk
 
 BASE_DIR = pathlib.Path(__file__).resolve().parent
 BLP_FILE = BASE_DIR / 'MainWindow.blp'
+BLP_NEW_WINDOW_FILE = BASE_DIR / 'NewWindow.blp'
 UI_FILE = BASE_DIR / 'MainWindow.ui'
+UI_NEW_WINDOW_FILE = BASE_DIR / 'NewWindow.ui'
+
 
 sys.path.append(str(BASE_DIR.parent.parent.parent / 'scripts'))
 
 from blp import blp_to_ui
 
 blp_to_ui(file=BLP_FILE)
+blp_to_ui(file=BLP_NEW_WINDOW_FILE)
 
 
-@Gtk.Template(filename=UI_FILE)
+@Gtk.Template(filename=UI_NEW_WINDOW_FILE)
 class NewWindow(Gtk.Window):
     __gtype_name__ = 'NewWindow'
 

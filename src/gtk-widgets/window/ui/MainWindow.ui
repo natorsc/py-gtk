@@ -43,10 +43,6 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
         <attribute name="label" translatable="yes">Preferences</attribute>
         <attribute name="action">app.preferences</attribute>
       </item>
-      <item>
-        <attribute name="label" translatable="yes">Atalhos</attribute>
-        <attribute name="action">app.shortcuts-window</attribute>
-      </item>
     </section>
   </menu>
 </interface>

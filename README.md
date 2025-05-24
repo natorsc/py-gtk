@@ -1,59 +1,45 @@
+# Build Beautiful GUIs with Python (PyGObject) and GTK
+
 ![Creating graphical interfaces with Python (PyGObject) and GTK](./docs/images/py-gtk.png "Creating graphical interfaces with Python (PyGObject) and GTK")
 
-<br>
-
-[![natorsc - py-gtk](https://img.shields.io/static/v1?label=natorsc&message=py-gtk&color=blue&logo=github)](https://github.com/natorsc/py-gtk "Go to repository.")
-&emsp;
+[![natorsc - py-gtk](https://img.shields.io/static/v1?label=natorsc&message=py-gtk&color=blue&logo=github)](https://github.com/natorsc/py-gtk)
 [![stars - py-gtk](https://img.shields.io/github/stars/natorsc/py-gtk?style=social)](https://github.com/natorsc/py-gtk)
-&emsp;
 [![forks - py-gtk](https://img.shields.io/github/forks/natorsc/py-gtk?style=social)](https://github.com/natorsc/py-gtk)
-
 [![License MIT](https://img.shields.io/static/v1?label=License&message=MIT&color=blue)](./LICENSE)
 
-# Creating graphical interfaces with Python (PyGObject) and GTK
+## ✨ About This Project
 
-## 📝 Description
+This repository is your complete guide to building sleek, modern graphical user interfaces with Python (PyGObject) and GTK. Whether you're a beginner or an experienced developer, you'll find practical tutorials, tips, and real code examples to level up your projects.
 
-This repository is your go-to hub for tips, tutorials, and code examples on building stunning graphical interfaces with Python (PyGObject) and the GTK toolkit. Whether you're a beginner or an experienced developer, you'll find valuable resources to enhance your projects. If this content helps you, consider supporting the project with a donation to keep it growing!
+If this content has helped you, please consider making a donation. Your support makes a real difference and helps the project grow! 💙
 
----
+## 🛠 Technologies Used
 
-## 🛠 Technologies used
-
-To date, the following technologies have been used to build the project:
-
-[![Python](https://img.shields.io/badge/-Python-blue?logo=python&logoColor=white)](https://www.python.org/ "Go to the site.")
-&emsp;
-[![GTK](https://img.shields.io/badge/-GTK-blue?logo=gtk&logoColor=white)](https://www.gtk.org/ "Go to the site.")
-&emsp;
+[![Python](https://img.shields.io/badge/-Python-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![GTK](https://img.shields.io/badge/-GTK-blue?logo=gtk&logoColor=white)](https://www.gtk.org/)
 [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
 
----
+## 👨‍💻 Author
 
-## 🤓 Author
+Crafted with 💙 by Renato Cruz. Got questions or feedback? Reach out anytime!
 
-Crafted with 💙 by Renato Cruz 🤜🤛 Got questions or feedback? Feel free to reach out!
+[![Email](https://img.shields.io/badge/-Email-blueviolet?logo=gmail&logoColor=white)](mailto:natorsc@gmail.com)
 
-[![Email](https://img.shields.io/badge/-Email-blueviolet?logo=gmail&logoColor=white)](mailto:natorsc@gmail.com "Send an email.")
+What I'm listening to while I code or study 😎🎵:
 
-What I’m listening to while deep in study or code mode 😎🎵:
+[![Spotify](https://img.shields.io/badge/-Spotify-darkgreen?logo=spotify&logoColor=white)](https://open.spotify.com/playlist/1xf3u29puXlnrWO7MsaHL5)
 
-[![Spotify](https://img.shields.io/badge/-Spotify-darkgreen?logo=spotify&logoColor=white)](https://open.spotify.com/playlist/1xf3u29puXlnrWO7MsaHL5?si=A-LgwRJXSvOno_e6trpi5w&utm_source=copy-link "Access the playlist.")
+## 💝 Support This Project
 
----
+Your donation keeps this project alive and helps me continue creating and sharing useful content.
 
-## 💝 Donations
+### GitHub Sponsors
 
-Thank you for your donation! Your support helps me keep this content alive and growing 😊.
-
-### Github
-
-https://github.com/sponsors/natorsc/
-
+[https://github.com/sponsors/natorsc/](https://github.com/sponsors/natorsc/)
 
 ### Pix (Brazil)
 
-**Key**: `b1839493-2afe-484d-9272-82a3e402b36f`
+`b1839493-2afe-484d-9272-82a3e402b36f`
 
 ---
 
@@ -190,11 +176,30 @@ https://github.com/sponsors/natorsc/
 
 ---
 
-#### Drag and drop
+#### Gtk.CssProvider
 
-![Gtk.Drag and drop](./docs/images/gtk-widgets/drag-and-drop.png "Gtk.Drag and drop")
+![Gtk.CssProvider](./docs/images/gtk-widgets/css-provider.png "Gtk.CssProvider")
 
-- [Python](./src/gtk-widgets/drag-and-drop/MainWindow.py).
+- [Python](./src/gtk-widgets/css-provider/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/css-provider/ui).
+
+---
+
+#### Gtk drag and drop data
+
+![Gtk drag and drop data](./docs/images/gtk-widgets/drag-and-drop-data.png "Gtk drag and drop data")
+
+- [Python](./src/gtk-widgets/drag-and-drop-data/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/drag-and-drop-data/ui).
+
+---
+
+#### Gtk drag and drop widget
+
+![Gtk drag and drop widget](./docs/images/gtk-widgets/drag-and-drop-widget.png "Gtk drag and drop widget")
+
+- [Python](./src/gtk-widgets/drag-and-drop-widget/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/drag-and-drop-widget/ui).
 
 ---
 
@@ -301,9 +306,7 @@ https://github.com/sponsors/natorsc/
 
 ![Gtk.ListView](./docs/images/gtk-widgets/list-view.png "Gtk.ListView")
 
-> 🚨 Criar código Python.
-
-- [Python](#gtklistview).
+- [Python](./src/gtk-widgets/list-view/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/list-view/ui).
 
 ---
@@ -363,25 +366,6 @@ Pango tags
 
 ---
 
-#### Gtk.ShortcutsWindow
-
-![Gtk.ShortcutsWindow](./docs/images/gtk-widgets/shortcuts-window.png "Gtk.ShortcutsWindow")
-
-> 🚨 Criar código Python.
-
-- [GTK Blueprint](./src/gtk-widgets/shortcuts-window/ui).
-
----
-
-#### Signals and slots
-
-![Signals and slots](./docs/images/gtk-widgets/signals-and-slots.png "Signals and slots")
-
-- [Python](./src/gtk-widgets/signals-and-slots/MainWindow.py).
-- [GTK Blueprint](./src/gtk-widgets/signals-and-slots/ui).
-
----
-
 #### Gtk.StackSidebar
 
 ![Gtk.StackSidebar](./docs/images/gtk-widgets/stack-sidebar.png "Gtk.StackSidebar")
@@ -411,11 +395,10 @@ Pango tags
 
 #### Translation (gettext)
 
-![Gtk.Translation (gettext)](./docs/images/gtk-widgets/ "Gtk.Translation (gettext)")
+![Gtk Translation (gettext)](./docs/images/gtk-widgets/translation-gettext.png "Gtk translation (gettext)")
 
-> 🚨 Revisar.
-
-- [Python](./src/gtk-widgets/translator-gettext/MainWindow.py).
+- [Python](./src/gtk-widgets/translation-gettext/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/translation-gettext/ui).
 
 ---
 

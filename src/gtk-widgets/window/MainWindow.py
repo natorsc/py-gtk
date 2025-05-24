@@ -15,8 +15,8 @@ class NewWindow(Gtk.Window):
 
         self.set_title(title='Python - PyGObject - GTK')
         self.set_modal(modal=True)
-        self.set_default_size(width=int(1366 / 3), height=int(768 / 3))
-        self.set_size_request(width=683, height=384)
+        self.set_default_size(width=600, height=300)
+        self.set_size_request(width=600, height=300)
 
         vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=6)
         vbox.set_margin_top(margin=12)

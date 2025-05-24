@@ -38,7 +38,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
             <child>
               <object class="GtkStackPage">
                 <property name="name">page1</property>
-                <property name="title">Python - PyGObject - GTK</property>
+                <property name="title">Page 1</property>
                 <property name="child">
                   <object class="GtkBox">
                     <property name="orientation">1</property>
@@ -65,7 +65,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
             <child>
               <object class="GtkStackPage">
                 <property name="name">page2</property>
-                <property name="title">Python - PyGObject - GTK</property>
+                <property name="title">Page 1</property>
                 <property name="child">
                   <object class="GtkBox">
                     <property name="orientation">1</property>

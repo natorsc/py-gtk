@@ -10,12 +10,9 @@ gi.require_version(namespace='Gtk', version='4.0')
 
 from gi.repository import Gio, Gtk
 
+BASE_DIR = pathlib.Path(__file__).resolve().parent
 SRC_DIR = BASE_DIR.parent.parent
-VIDEO = str(
-    SRC_DIR.joinpath(
-        'data', 'videos', 'beautiful-sunset-view-nature-background.mp4'
-    )
-)
+VIDEO = str(SRC_DIR / 'data' / 'videos' / 'video.mp4')
 
 
 class ExampleWindow(Gtk.ApplicationWindow):
