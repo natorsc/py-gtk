@@ -1,0 +1,71 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $ExampleWindow: Adw.ApplicationWindow {
+  title: "Python - PyGObject - GTK";
+  default-width: 683;
+  default-height: 384;
+
+  content: Adw.ToolbarView {
+    [top]
+    Adw.HeaderBar header_bar {}
+
+    content: Gtk.Box {
+      orientation: vertical;
+      spacing: 12;
+      margin-top: 12;
+      margin-end: 12;
+      margin-bottom: 12;
+      margin-start: 12;
+
+      Gtk.Label {
+        label: "Drag or use the mouse scroller to change pages.";
+      }
+
+      Separator {
+        orientation: horizontal;
+      }
+
+      Adw.Carousel carousel {
+        vexpand: true;
+        hexpand: true;
+        spacing: 24;
+        page-changed => $on_carousel_page_changed();
+
+        Gtk.Box {
+          orientation: vertical;
+
+          Gtk.Label {
+            label: "Page 01.";
+            vexpand: true;
+            hexpand: true;
+          }
+        }
+
+        Gtk.Box {
+          orientation: vertical;
+
+          Gtk.Label {
+            label: "Page 02.";
+            vexpand: true;
+            hexpand: true;
+          }
+        }
+
+        Gtk.Box {
+          orientation: vertical;
+
+          Gtk.Label {
+            label: "Page 03.";
+            vexpand: true;
+            hexpand: true;
+          }
+        }
+      }
+
+      Adw.CarouselIndicatorLines {
+        carousel: carousel;
+      }
+    };
+  };
+}

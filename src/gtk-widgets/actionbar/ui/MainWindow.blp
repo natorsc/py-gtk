@@ -1,0 +1,59 @@
+using Gtk 4.0;
+
+template $ExampleWindow: Gtk.ApplicationWindow {
+  title: "Python - PyGObject - GTK";
+  default-width: 683;
+  default-height: 384;
+
+  [titlebar]
+  Gtk.HeaderBar header_bar {
+    [end]
+    Gtk.MenuButton {
+      icon-name: "open-menu-symbolic";
+      menu-model: primary_menu;
+    }
+  }
+
+  Gtk.Box {
+    orientation: vertical;
+    margin-top: 12;
+    margin-end: 12;
+    margin-bottom: 12;
+    margin-start: 12;
+    spacing: 12;
+
+    Gtk.ActionBar {
+      valign: end;
+      vexpand: true;
+
+      Gtk.Button {
+        icon-name: "call-start-symbolic";
+        clicked => $on_button_clicked();
+      }
+
+      Gtk.Button {
+        icon-name: "call-stop-symbolic";
+        clicked => $on_button_clicked();
+      }
+
+      Gtk.Button {
+        icon-name: "contact-new-symbolic";
+        clicked => $on_button_clicked();
+      }
+
+      Gtk.Button {
+        icon-name: "address-book-new-symbolic";
+        clicked => $on_button_clicked();
+      }
+    }
+  }
+}
+
+menu primary_menu {
+  section {
+    item {
+      label: _("Preferences");
+      action: "app.preferences";
+    }
+  }
+}

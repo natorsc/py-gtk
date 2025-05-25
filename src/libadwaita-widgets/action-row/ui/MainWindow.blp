@@ -1,0 +1,110 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $ExampleWindow: Adw.ApplicationWindow {
+  title: "Python - PyGObject - GTK";
+  default-width: 683;
+  default-height: 384;
+
+  content: Adw.ToolbarView {
+    [top]
+    Adw.HeaderBar header_bar {}
+
+    content: Gtk.Box {
+      orientation: vertical;
+      spacing: 12;
+      margin-top: 12;
+      margin-end: 12;
+      margin-bottom: 12;
+      margin-start: 12;
+
+      Gtk.ListBox {
+        selection-mode: none;
+
+        styles [
+          "boxed-list",
+        ]
+
+        Adw.ActionRow {
+          title: "Python - PyGObject - GTK";
+          subtitle: "Python - PyGObject - GTK";
+
+          [prefix]
+          Gtk.Image {
+            icon-name: "accessories-text-editor-symbolic";
+          }
+
+          [suffix]
+          Gtk.Switch {
+            valign: center;
+            notify::active => $on_switch_button_clicked();
+          }
+        }
+
+        Adw.ActionRow {
+          title: "Python - PyGObject - GTK";
+          subtitle: "Python - PyGObject - GTK";
+
+          [prefix]
+          Gtk.Image {
+            icon-name: "accessories-text-editor-symbolic";
+          }
+
+          [suffix]
+          Gtk.Switch {
+            valign: center;
+            notify::active => $on_switch_button_clicked();
+          }
+        }
+
+        Adw.ActionRow {
+          title: "Python - PyGObject - GTK";
+          subtitle: "Python - PyGObject - GTK";
+
+          [prefix]
+          Gtk.Image {
+            icon-name: "accessories-text-editor-symbolic";
+          }
+
+          [suffix]
+          Gtk.Switch {
+            valign: center;
+            notify::active => $on_switch_button_clicked();
+          }
+        }
+
+        Adw.ActionRow {
+          title: "Python - PyGObject - GTK";
+          subtitle: "Python - PyGObject - GTK";
+
+          [prefix]
+          Gtk.Image {
+            icon-name: "accessories-text-editor-symbolic";
+          }
+
+          [suffix]
+          Gtk.Switch {
+            valign: center;
+            notify::active => $on_switch_button_clicked();
+          }
+        }
+
+        Adw.ActionRow {
+          title: "Python - PyGObject - GTK";
+          subtitle: "Python - PyGObject - GTK";
+
+          [prefix]
+          Gtk.Image {
+            icon-name: "accessories-text-editor-symbolic";
+          }
+
+          [suffix]
+          Gtk.Switch {
+            valign: center;
+            notify::active => $on_switch_button_clicked();
+          }
+        }
+      }
+    };
+  };
+}

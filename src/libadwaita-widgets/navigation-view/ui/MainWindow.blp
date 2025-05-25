@@ -1,0 +1,64 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $ExampleWindow: Adw.ApplicationWindow {
+  title: "Python - PyGObject - GTK";
+  default-width: 683;
+  default-height: 384;
+
+  content: Adw.NavigationView adw_navigation_view {
+    Adw.NavigationPage {
+      title: "Page 01";
+      tag: "page-01";
+
+      child: Adw.ToolbarView {
+        [top]
+        Adw.HeaderBar {}
+
+        content: Box {
+          orientation: vertical;
+          spacing: 12;
+          margin-top: 12;
+          margin-end: 12;
+          margin-bottom: 12;
+          margin-start: 12;
+
+          Label {
+            label: "Page 01";
+            vexpand: true;
+          }
+
+          Button {
+            label: "Go to page 02";
+            action-name: "navigation.push";
+            action-target: "'page-02'";
+          }
+        };
+      };
+    }
+
+    Adw.NavigationPage {
+      title: "Page 02";
+      tag: "page-02";
+
+      child: Adw.ToolbarView {
+        [top]
+        Adw.HeaderBar {}
+
+        content: Box {
+          orientation: vertical;
+          spacing: 12;
+          margin-top: 12;
+          margin-end: 12;
+          margin-bottom: 12;
+          margin-start: 12;
+
+          Label {
+            label: "Page 02";
+            vexpand: true;
+          }
+        };
+      };
+    }
+  };
+}

@@ -1,0 +1,67 @@
+using Gtk 4.0;
+
+template $ExampleWindow: Gtk.ApplicationWindow {
+  title: "Python - PyGObject - GTK";
+  default-width: 683;
+  default-height: 384;
+
+  [titlebar]
+  Gtk.HeaderBar header_bar {
+    [end]
+    Gtk.MenuButton {
+      icon-name: "open-menu-symbolic";
+      menu-model: primary_menu;
+    }
+  }
+
+  Gtk.Box {
+    orientation: vertical;
+    margin-top: 12;
+    margin-end: 12;
+    margin-bottom: 12;
+    margin-start: 12;
+    spacing: 12;
+
+    Gtk.TextView {
+      buffer: text_buffer;
+      vexpand: true;
+    }
+
+    Gtk.Box {
+      orientation: horizontal;
+      halign: center;
+      spacing: 12;
+
+      Gtk.Button {
+        label: "Print";
+        clicked => $on_button_open_print_dialog_clicked();
+      }
+
+      Gtk.Button {
+        label: "View";
+        clicked => $on_button_open_preview_clicked();
+      }
+
+      Gtk.Button {
+        label: "Page setup";
+        clicked => $on_button_open_page_setup_dialog_clicked();
+      }
+
+      Gtk.Button {
+        label: "Export to PDF";
+        clicked => $on_button_export_to_pdf_clicked();
+      }
+    }
+  }
+}
+
+Gtk.TextBuffer text_buffer {}
+
+menu primary_menu {
+  section {
+    item {
+      label: _("Preferences");
+      action: "app.preferences";
+    }
+  }
+}

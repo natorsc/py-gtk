@@ -1,0 +1,31 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $ExampleWindow: Adw.ApplicationWindow {
+  title: "Python - PyGObject - GTK";
+  default-width: 683;
+  default-height: 384;
+
+  content: Adw.ToolbarView {
+    [top]
+    Adw.HeaderBar header_bar {}
+
+    content: Adw.ToastOverlay adw_toast_overlay {
+      child: Gtk.Box {
+        orientation: vertical;
+        spacing: 12;
+        margin-top: 12;
+        margin-end: 12;
+        margin-bottom: 12;
+        margin-start: 12;
+
+        Gtk.Button button {
+          label: "Click here";
+          vexpand: true;
+          valign: center;
+          clicked => $on_button_clicked();
+        }
+      };
+    };
+  };
+}

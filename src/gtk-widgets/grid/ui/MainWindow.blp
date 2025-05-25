@@ -1,0 +1,91 @@
+using Gtk 4.0;
+
+template $ExampleWindow: Gtk.ApplicationWindow {
+  title: "Python - PyGObject - GTK";
+  default-width: 683;
+  default-height: 384;
+
+  [titlebar]
+  Gtk.HeaderBar header_bar {
+    [end]
+    Gtk.MenuButton {
+      icon-name: "open-menu-symbolic";
+      menu-model: primary_menu;
+    }
+  }
+
+  Gtk.Grid {
+    margin-top: 12;
+    margin-end: 12;
+    margin-bottom: 12;
+    margin-start: 12;
+    row-spacing: 12;
+    column-spacing: 12;
+
+    Gtk.Button {
+      label: "Button 01";
+
+      layout {
+        column: "0";
+        row: "0";
+      }
+    }
+
+    Gtk.Button {
+      label: "Button 02";
+
+      layout {
+        column: "1";
+        row: "0";
+        column-span: "2";
+      }
+    }
+
+    Gtk.Button {
+      label: "Button 03";
+
+      layout {
+        column: "0";
+        row: "1";
+        row-span: "2";
+      }
+    }
+
+    Gtk.Button {
+      label: "Button 04";
+
+      layout {
+        column: "1";
+        row: "1";
+        column-span: "2";
+      }
+    }
+
+    Gtk.Button {
+      label: "Button 05";
+
+      layout {
+        column: "1";
+        row: "2";
+      }
+    }
+
+    Gtk.Button {
+      label: "Button 06";
+
+      layout {
+        column: "2";
+        row: "2";
+      }
+    }
+  }
+}
+
+menu primary_menu {
+  section {
+    item {
+      label: _("Preferences");
+      action: "app.preferences";
+    }
+  }
+}

@@ -1,0 +1,42 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $ExampleWindow: Adw.ApplicationWindow {
+  title: "Python - PyGObject - GTK";
+  default-width: 683;
+  default-height: 384;
+
+  content: Adw.ToolbarView {
+    [top]
+    Adw.HeaderBar header_bar {}
+
+    content: Gtk.Box {
+      orientation: horizontal;
+      homogeneous: true;
+      spacing: 12;
+      margin-top: 12;
+      margin-end: 12;
+      margin-bottom: 12;
+      margin-start: 12;
+
+      Adw.Avatar {
+        size: 100;
+        text: "Renato Cruz";
+        show-initials: false;
+      }
+
+      Adw.Avatar {
+        size: 100;
+        text: "Renato Cruz";
+        show-initials: true;
+      }
+
+      Adw.Avatar {
+        size: 100;
+        text: "Renato Cruz";
+        show-initials: false;
+        icon-name: "contact-new-symbolic";
+      }
+    };
+  };
+}
