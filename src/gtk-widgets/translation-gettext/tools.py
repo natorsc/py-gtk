@@ -45,9 +45,9 @@ def create_pot_file() -> None:
         check=True,
         text=True,
     )
-    print('Return Code:', result.returncode)
-    print('Standard Output:', result.stdout)
-    print('Standard Error:', result.stderr)
+    print(f'Return Code: {result.returncode}.')
+    print(f'Standard Output: {result.stdout}.')
+    print(f'Standard Error: {result.stderr}.')
     print('[!] Done [!]\n')
 
 
@@ -74,9 +74,9 @@ def create_po_file() -> None:
                 check=True,
                 text=True,
             )
-            print('Return Code:', result.returncode)
-            print('Standard Output:', result.stdout)
-            print('Standard Error:', result.stderr)
+            print(f'Return Code: {result.returncode}.')
+            print(f'Standard Output: {result.stdout}.')
+            print(f'Standard Error: {result.stderr}.')
             print('[!] Done [!]\n')
 
 
@@ -91,9 +91,9 @@ def update_translations() -> None:
                 check=True,
                 text=True,
             )
-            print('Return Code:', result.returncode)
-            print('Standard Output:', result.stdout)
-            print('Standard Error:', result.stderr)
+            print(f'Return Code: {result.returncode}.')
+            print(f'Standard Output: {result.stdout}.')
+            print(f'Standard Error: {result.stderr}.')
 
     print('[!] Done [!]\n')
 
@@ -109,9 +109,9 @@ def compile_translations() -> None:
                 check=True,
                 text=True,
             )
-            print('Return Code:', result.returncode)
-            print('Standard Output:', result.stdout)
-            print('Standard Error:', result.stderr)
+            print(f'Return Code: {result.returncode}.')
+            print(f'Standard Output: {result.stdout}.')
+            print(f'Standard Error: {result.stderr}.')
 
     print('[!] Done [!]\n')
 

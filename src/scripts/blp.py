@@ -18,10 +18,21 @@ if platform == 'win32':
 def blp_to_ui(file):
     print('[[!] Converting (blp -> ui), please wait... [!]')
     output = file.parent.joinpath(f'{file.stem}.ui')
-    try:
-        subprocess.call(args=[compiler, 'compile', '--output', output, file])
-    except Exception as error:
-        print(f'[X] Fail: {error}')
+    # try:
+    #     subprocess.call(args=[compiler, 'compile', '--output', output, file])
+    # except Exception as error:
+    #     print(f'[X] Fail: {error}')
+
+    result = subprocess.run(
+        args=[compiler, 'compile', '--output', output, file],
+        capture_output=True,
+        check=True,
+        text=True,
+    )
+
+    print(f'Return Code: {result.returncode}.')
+    # print(f'Standard Output: {result.stdout}.')
+    # print(f'Standard Error: {result.stderr}.')
     print('[!] Conversion finished [!]')
 
 
