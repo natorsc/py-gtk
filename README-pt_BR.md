@@ -397,6 +397,15 @@ Sua contribuição mantém este projeto vivo e me ajuda a continuar compartilhan
 
 ---
 
+#### Adw.AlertDialog
+
+![Adw.AlertDialog](./docs/images/libadwaita-widgets/alert-dialog.png "Adw.AlertDialog")
+
+- [Python](./src/libadwaita-widgets/alert-dialog/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/alert-dialog/ui).
+
+---
+
 #### Adw.ApplicationWindow
 
 ![Adw.ApplicationWindow](./docs/images/libadwaita-widgets/application-window.png "Adw.ApplicationWindow")
