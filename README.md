@@ -489,6 +489,15 @@ Pango tags
 
 ---
 
+#### Adw.Breakpoint
+
+![Adw.Breakpoint](./docs/images/libadwaita-widgets/breakpoint.png "Adw.Breakpoint")
+
+- [Python](./src/libadwaita-widgets/breakpoint/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/breakpoint/ui).
+
+---
+
 #### Adw.ButtonContent
 
 ![Adw.ButtonContent](./docs/images/libadwaita-widgets/button-content.png "Adw.ButtonContent")
