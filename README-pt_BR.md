@@ -45,6 +45,60 @@ Sua contribuição mantém este projeto vivo e me ajuda a continuar compartilhan
 
 `b1839493-2afe-484d-9272-82a3e402b36f`
 
+## 📑 Tutorials
+
+- [Como instalar Python e GTK no ChromeOS](./docs/install-gtk-chromeos-pt_BR.md).
+- [Como instalar Python e GTK no Linux](./docs/install-gtk-linux-pt_BR.md).
+- [Como instalar Python e GTK no macOS](./docs/install-gtk-macos-pt_BR.md).
+- [Como instalar Python e GTK no Microsoft Windows](./docs/install-gtk-windows-pt_BR.md).
+- [Como instalar Python e GTK no Microsoft Windows WSL 2](./docs/install-gtk-windows-wsl2-pt_BR.md).
+
+## 💡 Extra
+
+### GTK
+
+- [Documentação GTK 3](https://docs.gtk.org/gtk3/).
+- [Documentação GTK 4](https://docs.gtk.org/gtk4/).
+
+### Libadwaita
+
+- [Documentação 1.x](https://gnome.pages.gitlab.gnome.org/libadwaita/doc/1-latest/).
+
+### GNOME
+
+- [Site oficial](https://www.gnome.org/).
+- [Blog](https://blogs.gnome.org/).
+- [GNOME Human Interface Guidelines (HIG)](https://wiki.gnome.org/Design/HIG).
+
+### Ferramentas de desenvolvimento
+
+- [GNOME Builder](https://apps.gnome.org/pt-BR/app/org.gnome.Builder/).
+- [Workbench](https://apps.gnome.org/pt-BR/app/re.sonny.Workbench/).
+- [Cambalache](https://flathub.org/pt-BR/apps/ar.xjuan.Cambalache).
+- [Icon Library](https://flathub.org/apps/details/org.gnome.design.IconLibrary).
+- [Typography](https://flathub.org/apps/details/org.gnome.design.Typography).
+- [App Icon Preview](https://flathub.org/apps/details/org.gnome.design.AppIconPreview).
+- [Symbolic Preview](https://flathub.org/apps/details/org.gnome.design.SymbolicPreview).
+- [Color Palette](https://flathub.org/apps/details/org.gnome.design.Palette).
+- [Gnome icon library online](https://teams.pages.gitlab.gnome.org/Design/icon-development-kit-www/).
+
+### Softwares
+
+- [GNOME Apps](https://apps.gnome.org/pt-BR/).
+- [GNOME circle](https://circle.gnome.org/).
+- [Awesome GTK](https://github.com/valpackett/awesome-gtk).
+
+### Flatpak
+
+- [Site oficial](https://www.flatpak.org/).
+- [Flathub](https://flathub.org/).
+
+### Visual Studio Code
+
+- [Gnome Magic (bedsteler20)](https://marketplace.visualstudio.com/items?itemName=bedsteler20.gnome-magic).
+- [GTK Blueprint (Bodil Stokke)](https://marketplace.visualstudio.com/items?itemName=bodil.blueprint-gtk).
+- [Flatpak (Bilal Elmoussaoui)](https://marketplace.visualstudio.com/items?itemName=bilelmoussaoui.flatpak-vscode).
+
 ---
 
 ## Widgets

@@ -46,6 +46,14 @@ Your donation keeps this project alive and helps me continue creating and sharin
 
 ---
 
+## 📑 Tutorials
+
+- [Install Python and GTK on ChromeOS](./docs/install-gtk-chromeos-en.md).
+- [Install Python and GTK on Linux](./docs/install-gtk-linux-en.md).
+- [Install Python and GTK on macOS](./docs/install-gtk-macos-en.md).
+- [Install Python and GTK on Microsoft Windows](./docs/install-gtk-windows-en.md).
+- [Install Python and GTK on Microsoft Windows WSL 2](./docs/install-gtk-windows-wsl2-en.md).
+
 ## 💡 Extra
 
 ### GTK
@@ -63,7 +71,7 @@ Your donation keeps this project alive and helps me continue creating and sharin
 - [Blog](https://blogs.gnome.org/).
 - [GNOME Human Interface Guidelines (HIG)](https://wiki.gnome.org/Design/HIG).
 
-### Development
+### Development Tools
 
 - [GNOME Builder](https://apps.gnome.org/pt-BR/app/org.gnome.Builder/).
 - [Workbench](https://apps.gnome.org/pt-BR/app/re.sonny.Workbench/).
