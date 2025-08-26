@@ -13,15 +13,14 @@ template $ExampleWindow: Adw.ApplicationWindow {
     content: Adw.StatusPage adw_status_page {
       icon-name: "audio-volume-high-symbolic";
       title: "Adw.Breakpoint";
-
     };
   };
 
-Adw.Breakpoint {
+  Adw.Breakpoint {
     condition ("max-width: 700")
+
     setters {
       adw_status_page.icon-name: "audio-volume-muted-symbolic";
     }
   }
 }
-

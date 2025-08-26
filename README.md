@@ -507,6 +507,15 @@ Pango tags
 
 ---
 
+#### Adw.ButtonRow
+
+![Adw.ButtonRow](./docs/images/libadwaita-widgets/button-row.png "Adw.ButtonRow")
+
+- [Python](./src/libadwaita-widgets/button-row/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/button-row/ui).
+
+---
+
 #### Adw.Carousel
 
 ![Adw.Carousel](./docs/images/libadwaita-widgets/carousel.png "Adw.Carousel")
