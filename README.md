@@ -480,6 +480,15 @@ Pango tags
 
 ---
 
+#### Adw.BottomSheet
+
+![Adw.BottomSheet](./docs/images/libadwaita-widgets/bottom-sheet.png "Adw.BottomSheet")
+
+- [Python](./src/libadwaita-widgets/bottom-sheet/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/bottom-sheet/ui).
+
+---
+
 #### Adw.Banner
 
 ![Adw.Banner](./docs/images/libadwaita-widgets/banner.png "Adw.Banner")

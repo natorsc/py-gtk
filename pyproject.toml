@@ -5,13 +5,13 @@ description = "Creating graphical interfaces with Python (PyGObject) and GTK"
 readme = "README.md"
 requires-python = ">=3.12,<=3.14"
 dependencies = [
-    "pygobject>=3.52.3",
+    "pygobject>=3.54.2",
 ]
 
 [dependency-groups]
 dev = [
     "pygobject-stubs>=2.13.0",
-    "ruff>=0.12.10",
+    "ruff>=0.13.0",
     "taskipy>=1.14.1",
 ]
 
