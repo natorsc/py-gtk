@@ -178,7 +178,7 @@ class ExampleWindow(Adw.ApplicationWindow):
         repeat_btn.add_css_class(css_class='circular')
         controls_box.append(child=repeat_btn)
 
-        button_close_sheet = Gtk.Button(label='Fechar Painel')
+        button_close_sheet = Gtk.Button(label='Close')
         button_close_sheet.add_css_class(css_class='destructive-action')
         button_close_sheet.connect(
             'clicked', self.on_button_close_sheet_clicked

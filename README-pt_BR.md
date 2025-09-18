@@ -1,58 +1,58 @@
-# Build Beautiful GUIs with Python (PyGObject) and GTK
+# Criando interfaces gráficas com Python (PyGObject) e GTK
 
-![Creating graphical interfaces with Python (PyGObject) and GTK](./docs/images/py-gtk.png "Creating graphical interfaces with Python (PyGObject) and GTK")
+![Criando interfaces gráficas com Python (PyGObject) e GTK](./docs/images/py-gtk.png "Criando interfaces gráficas com Python (PyGObject) e GTK")
 
 [![natorsc - py-gtk](https://img.shields.io/static/v1?label=natorsc&message=py-gtk&color=blue&logo=github)](https://github.com/natorsc/py-gtk)
 [![stars - py-gtk](https://img.shields.io/github/stars/natorsc/py-gtk?style=social)](https://github.com/natorsc/py-gtk)
 [![forks - py-gtk](https://img.shields.io/github/forks/natorsc/py-gtk?style=social)](https://github.com/natorsc/py-gtk)
-[![License MIT](https://img.shields.io/static/v1?label=License&message=MIT&color=blue)](./LICENSE)
+[![License MIT](https://img.shields.io/static/v1?label=Licença&message=MIT&color=blue)](./LICENSE)
 
 - [🇺🇸](./README.md)
 - [🇧🇷](./README-pt_BR.md)
 
-## ✨ About This Project
+## ✨ Sobre este projeto
 
-This repository is your complete guide to building sleek, modern graphical user interfaces with Python (PyGObject) and GTK. Whether you're a beginner or an experienced developer, you'll find practical tutorials, tips, and real code examples to level up your projects.
+Este repositório é o seu guia completo para construir interfaces gráficas modernas e elegantes com Python (PyGObject) e GTK. Seja você iniciante ou desenvolvedor experiente, aqui encontrará tutoriais práticos, dicas e exemplos de código reais para elevar o nível dos seus projetos.
 
-If this content has helped you, please consider making a donation. Your support makes a real difference and helps the project grow! 💙
+Se este conteúdo ajudou você, considere fazer uma doação. Seu apoio faz toda a diferença e ajuda o projeto a crescer! 💙
 
-## 🛠 Technologies Used
+## 🛠 Tecnologias utilizadas
 
 [![Python](https://img.shields.io/badge/-Python-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![GTK](https://img.shields.io/badge/-GTK-blue?logo=gtk&logoColor=white)](https://www.gtk.org/)
 [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
 
-## 👨‍💻 Author
+## 👨‍💻 Autor
 
-Crafted with 💙 by Renato Cruz. Got questions or feedback? Reach out anytime!
+Criado com 💙 por Renato Cruz. Tem dúvidas ou feedback? Entre em contato a qualquer momento!
 
 [![Email](https://img.shields.io/badge/-Email-blueviolet?logo=gmail&logoColor=white)](mailto:natorsc@gmail.com)
 
-What I'm listening to while I code or study 😎🎵:
+O que estou ouvindo enquanto programo ou estudo 😎🎵:
 
 [![Spotify](https://img.shields.io/badge/-Spotify-darkgreen?logo=spotify&logoColor=white)](https://open.spotify.com/playlist/1xf3u29puXlnrWO7MsaHL5)
 
-## 💝 Support This Project
+## 💝 Apoie este projeto
 
-Your donation keeps this project alive and helps me continue creating and sharing useful content.
+Sua doação mantém este projeto vivo e me ajuda a continuar criando e compartilhando conteúdo útil.
 
-### GitHub Sponsors
+### GitHub sponsors
 
 [https://github.com/sponsors/natorsc/](https://github.com/sponsors/natorsc/).
 
-### Pix (Brazil)
+### Pix (Brasil)
 
 `b1839493-2afe-484d-9272-82a3e402b36f`.
 
 ---
 
-## 📑 Tutorials
+## 📑 Tutoriais
 
-- [Install Python and GTK on ChromeOS](./docs/install-gtk-chromeos-en.md).
-- [Install Python and GTK on Linux](./docs/install-gtk-linux-en.md).
-- [Install Python and GTK on macOS](./docs/install-gtk-macos-en.md).
-- [Install Python and GTK on Microsoft Windows](./docs/install-gtk-windows-en.md).
-- [Install Python and GTK on Microsoft Windows WSL 2](./docs/install-gtk-windows-wsl2-en.md).
+- [Instalar Python e GTK no ChromeOS](./docs/install-gtk-chromeos-pt_BR.md).
+- [Instalar Python e GTK no Linux](./docs/install-gtk-linux-pt_BR.md).
+- [Instalar Python e GTK no macOS](./docs/install-gtk-macos-pt_BR.md).
+- [Instalar Python e GTK no Microsoft Windows](./docs/install-gtk-windows-pt_BR.md).
+- [Instalar Python e GTK no Microsoft Windows WSL 2](./docs/install-gtk-windows-wsl2-pt_BR.md).
 
 ## 💡 Extra
 
