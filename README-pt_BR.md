@@ -484,7 +484,7 @@ Pango tags
 
 ![Adw.BottomSheet](./docs/images/libadwaita-widgets/bottom-sheet.png "Adw.BottomSheet")
 
-- [https://youtu.be/csuINl9zBMs](https://youtu.be/csuINl9zBMs).
+- [YouTube](https://youtu.be/csuINl9zBMs).
 - [Python](./src/libadwaita-widgets/bottom-sheet/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/bottom-sheet/ui).
 
@@ -586,6 +586,16 @@ Pango tags
 
 - [Python](./src/libadwaita-widgets/expander-row/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/expander-row/ui).
+
+---
+
+#### Adw.MultiLayoutView
+
+![Adw.MultiLayoutView](./docs/images/libadwaita-widgets/multi-layout-view.png "Adw.MultiLayoutView")
+
+- [YouTube](https://youtu.be/vaahn-hVICk).
+- [Python](./src/libadwaita-widgets/multi-layout-view/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/multi-layout-view/ui).
 
 ---
 

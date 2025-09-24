@@ -33,7 +33,7 @@ data = open(file=TEMPLATE_FILE, mode='r', encoding='utf-8')
 template = data.read()
 
 print('[!] Collecting information, please wait... [!]')
-WIDGETS = [Gtk.Button(), Adw.ActionRow()]
+WIDGETS = [Adw.MultiLayoutView(), Adw.Layout(), Adw.LayoutSlot(id='renato')]
 for widget in WIDGETS:
     widget_name = widget.get_name()
     methods_get = [
