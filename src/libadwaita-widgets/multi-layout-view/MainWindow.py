@@ -36,7 +36,10 @@ class ExampleWindow(Adw.ApplicationWindow):
         adw_multi_layout_view.add_layout(adw_layout_desktop)
 
         # Mobile layout.
-        vbox_bottom_bar = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=0)
+        vbox_bottom_bar = Gtk.Box.new(
+            orientation=Gtk.Orientation.VERTICAL,
+            spacing=0,
+        )
         vbox_bottom_bar.set_margin_top(margin=20)
         vbox_bottom_bar.set_margin_end(margin=12)
         vbox_bottom_bar.set_margin_bottom(margin=12)
