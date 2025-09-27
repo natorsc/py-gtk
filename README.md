@@ -635,6 +635,15 @@ Pango tags
 
 ---
 
+#### Adw.ShortcutsDialog
+
+![Adw.ShortcutsDialog](./docs/images/libadwaita-widgets/shortcuts-dialog.png "Adw.ShortcutsDialog")
+
+- [Python](./src/libadwaita-widgets/shortcuts-dialog/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/shortcuts-dialog/ui).
+
+---
+
 #### Adw.SplitButton
 
 ![Adw.SplitButton](./docs/images/libadwaita-widgets/split-button.png "Adw.SplitButton")

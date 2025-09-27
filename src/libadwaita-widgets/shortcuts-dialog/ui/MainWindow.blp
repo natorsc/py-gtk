@@ -1,0 +1,44 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $ExampleWindow: Adw.ApplicationWindow {
+  title: "Python - PyGObject - GTK";
+  default-width: 683;
+  default-height: 384;
+
+  content: Adw.ToolbarView {
+    [top]
+    Adw.HeaderBar header_bar {}
+
+    content: Gtk.Box {
+      orientation: vertical;
+      margin-top: 12;
+      margin-end: 12;
+      margin-bottom: 12;
+      margin-start: 12;
+      spacing: 12;
+
+      Gtk.Button {
+        label: "Click here";
+        clicked => $on_open_button_open_shortcuts_clicked();
+      }
+    };
+  };
+}
+
+Adw.ShortcutsDialog adw_shortcuts_dialog {
+  Adw.ShortcutsSection {
+    title: _("Section 01");
+
+    Adw.ShortcutsItem {
+      title: _("Item 01");
+      accelerator: "<Shift>A";
+    }
+
+    Adw.ShortcutsItem {
+      title: _("Quit");
+      action-name: "app.quit";
+      accelerator: "<Control>q";
+    }
+  }
+}
