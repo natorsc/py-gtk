@@ -10,12 +10,10 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
     <property name="title">Python - PyGObject - GTK</property>
     <property name="default-width">683</property>
     <property name="default-height">384</property>
-    <property name="width-request">600</property>
-    <property name="height-request">300</property>
     <child>
       <object class="AdwBreakpoint">
-        <condition>max-width: 680sp</condition>
-        <setter object="adw_view_switcher_bar_bottom" property="reveal">true</setter>
+        <condition>max-width: 550sp</condition>
+        <setter object="switcher_bar" property="reveal">true</setter>
         <setter object="header_bar" property="title-widget"></setter>
       </object>
     </child>
@@ -25,22 +23,22 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
           <object class="AdwHeaderBar" id="header_bar">
             <property name="title-widget">
               <object class="AdwViewSwitcher">
-                <property name="stack">adw_view_stack</property>
+                <property name="stack">stack</property>
                 <property name="policy">1</property>
               </object>
             </property>
           </object>
         </child>
         <child type="bottom">
-          <object class="AdwViewSwitcherBar" id="adw_view_switcher_bar_bottom">
-            <property name="stack">adw_view_stack</property>
+          <object class="AdwViewSwitcherBar" id="switcher_bar">
+            <property name="stack">stack</property>
           </object>
         </child>
         <property name="content">
-          <object class="AdwViewStack" id="adw_view_stack">
+          <object class="AdwViewStack" id="stack">
             <child>
               <object class="AdwViewStackPage">
-                <property name="name">page-01</property>
+                <property name="name">page1</property>
                 <property name="title">Page 01</property>
                 <property name="icon-name">user-desktop-symbolic</property>
                 <property name="child">
@@ -52,7 +50,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
             </child>
             <child>
               <object class="AdwViewStackPage">
-                <property name="name">page-02</property>
+                <property name="name">page2</property>
                 <property name="title">Page 02</property>
                 <property name="icon-name">user-home-symbolic</property>
                 <property name="child">

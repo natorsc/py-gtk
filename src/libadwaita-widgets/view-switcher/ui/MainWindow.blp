@@ -1,0 +1,54 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $ExampleWindow: Adw.ApplicationWindow {
+  title: "Python - PyGObject - GTK";
+  default-width: 683;
+  default-height: 384;
+
+  Adw.Breakpoint {
+    condition ("max-width: 550sp")
+
+    setters {
+      switcher_bar.reveal: true;
+      header_bar.title-widget: null;
+    }
+  }
+
+  content: Adw.ToolbarView {
+    [top]
+    Adw.HeaderBar header_bar {
+      title-widget: Adw.ViewSwitcher {
+        stack: stack;
+        policy: wide;
+      };
+    }
+
+    [bottom]
+    Adw.ViewSwitcherBar switcher_bar {
+      stack: stack;
+    }
+
+    content: Adw.ViewStack stack {
+      Adw.ViewStackPage {
+        name: "page1";
+        title: "Page 01";
+        icon-name: "user-desktop-symbolic";
+
+        child: Adw.StatusPage {
+          title: "Page 01";
+        };
+      }
+
+      Adw.ViewStackPage {
+        name: "page2";
+        title: "Page 02";
+        icon-name: "user-home-symbolic";
+
+        child: Adw.StatusPage {
+          title: "Page 02";
+        };
+      }
+    };
+  };
+}
