@@ -53,6 +53,7 @@ Sua doação mantém este projeto vivo e me ajuda a continuar criando e comparti
 - [Instalar Python e GTK no macOS](./docs/install-gtk-macos-pt_BR.md).
 - [Instalar Python e GTK no Microsoft Windows](./docs/install-gtk-windows-pt_BR.md).
 - [Instalar Python e GTK no Microsoft Windows WSL 2](./docs/install-gtk-windows-wsl2-pt_BR.md).
+- [Instalar a linguagem de marcação Blueprint](./docs/install-blueprint-markup-language-pt_BR.md).
 
 ## 💡 Extra
 
@@ -668,6 +669,33 @@ Pango tags
 
 - [Python](./src/libadwaita-widgets/toast-overlay/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/toast-overlay/ui).
+
+---
+
+#### Adw.ViewStack
+
+![Adw.ViewStack](./docs/images/libadwaita-widgets/view-stack.png "Adw.ViewStack")
+
+- [Python](./src/libadwaita-widgets/view-stack/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/view-stack/ui).
+
+---
+
+#### Adw.ViewStackPage
+
+![Adw.ViewStackPage](./docs/images/libadwaita-widgets/view-stack.png "Adw.ViewStackPage")
+
+- [Python](./src/libadwaita-widgets/view-stack-page/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/view-stack-page/ui).
+
+---
+
+#### Adw.ViewSwitcher
+
+![Adw.ViewSwitcher](./docs/images/libadwaita-widgets/view-stack.png "Adw.ViewSwitcher")
+
+- [Python](./src/libadwaita-widgets/view-switcher/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/view-switcher/ui).
 
 ---
 
