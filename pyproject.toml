@@ -3,15 +3,15 @@ name = "py-gtk"
 version = "0.1.0"
 description = "Creating graphical interfaces with Python (PyGObject) and GTK"
 readme = "README.md"
-requires-python = ">=3.12,<=3.14"
+requires-python = ">=3.12,<3.15"
 dependencies = [
-    "pygobject>=3.54.2",
+    "pygobject>=3.54.3",
 ]
 
 [dependency-groups]
 dev = [
     "pygobject-stubs>=2.13.0",
-    "ruff>=0.13.0",
+    "ruff>=0.13.2",
     "taskipy>=1.14.1",
 ]
 
@@ -28,3 +28,4 @@ quote-style = "single"
 [tool.taskipy.tasks]
 format = "ruff check . --select I --fix && ruff format ."
 format-blp = "blueprint-compiler format -f -n src"
+outdated = "uv tree --outdated --depth=1"
