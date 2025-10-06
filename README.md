@@ -645,6 +645,33 @@ Pango tags
 
 ---
 
+#### Adw.Sidebar
+
+![Adw.Sidebar](./docs/images/libadwaita-widgets/sidebar.png "Adw.Sidebar")
+
+- [Python](./src/libadwaita-widgets/sidebar/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/sidebar/ui). ToDo.
+
+---
+
+#### Adw.SidebarItem
+
+![Adw.SidebarItem](./docs/images/libadwaita-widgets/sidebar.png "Adw.SidebarItem")
+
+- [Python](./src/libadwaita-widgets/sidebar-item/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/sidebar-item/ui). ToDo.
+
+---
+
+#### Adw.SidebarSection
+
+![Adw.SidebarSection](./docs/images/libadwaita-widgets/sidebar.png "Adw.SidebarSection")
+
+- [Python](./src/libadwaita-widgets/sidebar-section/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/sidebar-section/ui). ToDo.
+
+---
+
 #### Adw.SplitButton
 
 ![Adw.SplitButton](./docs/images/libadwaita-widgets/split-button.png "Adw.SplitButton")
@@ -705,3 +732,12 @@ Pango tags
 
 - [Python](./src/libadwaita-widgets/view-switcher-bar/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/view-switcher-bar/ui).
+
+---
+
+#### Adw.ViewSwitcherSidebar
+
+![Adw.ViewSwitcherSidebar](./docs/images/libadwaita-widgets/view-switcher-sidebar.png "Adw.ViewSwitcherSidebar")
+
+- [Python](./src/libadwaita-widgets/view-switcher-sidebar/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/view-switcher-sidebar/ui). ToDo.
