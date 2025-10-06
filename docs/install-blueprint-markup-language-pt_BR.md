@@ -1,14 +1,3 @@
----
-title: "Como instalar a linguagem de marcação Gnome Blueprint"
-datePublished: Wed May 07 2025 17:58:50 GMT+0000 (Coordinated Universal Time)
-cuid: cmae8ul0r000209jxcrp641d7
-slug: como-instalar-a-linguagem-de-marcacao-gnome-blueprint
-cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/fteR0e2BzKo/upload/f1489099496fa4ecab96a34b48a6453b.jpeg
-tags: linux, gnome, gtk-4
-
----
-
-
 # Como instalar a linguagem de marcação Gnome Blueprint
 
 Blueprint é uma linguagem de marcação para criação de interfaces gráfica com o toolkit [GTK](https://www.gtk.org/).
