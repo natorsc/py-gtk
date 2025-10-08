@@ -6,12 +6,46 @@ template $ExampleWindow: Adw.ApplicationWindow {
   default-width: 683;
   default-height: 384;
 
-  content: Adw.ToolbarView {
-    [top]
-    Adw.HeaderBar header_bar {}
+Adw.Breakpoint {
+    condition ("max-width: 600sp")
 
-    content: Adw.StatusPage {
-      title: "Hello World!";
+    setters {
+      adw_navigation_split_view.collapsed: true;
+    }
+  }
+
+  content: Adw.NavigationSplitView adw_navigation_split_view {
+    sidebar: Adw.NavigationPage {
+      tag: "sidebar";
+      title: _("Sidebar");
+      Adw.ToolbarView {
+        [top]
+        Adw.HeaderBar {}
+
+        content:  Adw.Sidebar {
+          activated => $on_sidebar_activated_cb();
+          Adw.SidebarSection {
+            title: "Section 01";
+            Adw.SidebarItem {
+              title: "Item 01";
+            }
+            Adw.SidebarItem {
+              title: "Item 02";
+            }
+          }
+        };
+      }
+    };
+    content: Adw.NavigationPage {
+      tag: "content";
+      title: _("Content");
+
+      Adw.ToolbarView {
+        [top]
+        Adw.HeaderBar {}
+        // Content added by Python code: Page01().
+        // content:  {};
+      }
     };
   };
 }
