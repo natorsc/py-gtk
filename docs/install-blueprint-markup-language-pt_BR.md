@@ -14,16 +14,12 @@ Este é um formato amplamente utilizado e bem aceito no geral, contudo ele tende
 
 Essa dificuldade tente a gerar uma curva de aprendizado grande e em muitos casos existe a necessidade da utilização de softwares que permitam o desenvolvimento das interfaces gráficas de forma visual.
 
-Alguns exemplos desses softwares para GTK são:
+Alguns exemplos desses softwares são:
 
 * [Cambalache](https://gitlab.gnome.org/jpu/cambalache).
-    
 * [Drafting](https://gitlab.gnome.org/chergert/drafting).
-    
 * [Glade](https://glade.gnome.org/). Não é recomendada a sua utilização para o desenvolvimento com GTK 4.
-    
-* [Workbench](https://github.com/workbenchdev/Workbench).
-    
+* [Workbench](https://github.com/workbenchdev/Workbench). Ferramenta para estudo e prototipação.
 
 Para amenizar essas dificuldades é que nasce a ideia da linguagem de marcação Blueprint.
 
@@ -102,8 +98,7 @@ Como podemos ver o código da interface gráfica se torna bem mais legível e si
 
 #### Arch Linux
 
-* Site oficial da distribuição Linux [Arch Linux](https://archlinux.org/).
-    
+- Site oficial da distribuição Linux [Arch Linux](https://archlinux.org/).
 
 ```bash
 sudo pacman -S \
@@ -113,7 +108,6 @@ blueprint-compiler
 #### Fedora
 
 * Site oficial da distribuição Linux [Fedora](https://fedoraproject.org/).
-    
 
 ```bash
 sudo dnf install \
@@ -123,7 +117,6 @@ blueprint-compiler
 #### openSUSE Tumbleweed
 
 * Site oficial da distribuição Linux [openSUSE Tumbleweed](https://www.opensuse.org/#Tumbleweed).
-    
 
 ```bash
 sudo zypper install \
@@ -133,7 +126,6 @@ blueprint-compiler
 #### Ubuntu
 
 * Site oficial da distribuição Linux [Ubuntu](https://ubuntu.com/).
-    
 
 ```bash
 sudo apt install \
@@ -285,10 +277,7 @@ Alguns editores de texto possuem suporte para a linguagem de marcação Blueprin
 
 Dentro os principais temos:
 
-* [GNU Emacs (DrBluefall)](https://github.com/DrBluefall/blueprint-mode).
-    
-* [Visual Studio Code (Bodil Stokke)](https://marketplace.visualstudio.com/items?itemName=bodil.blueprint-gtk).
-    
-* [VIM (thetek42)](https://github.com/thetek42/vim-blueprint-syntax).
-    
-* [VIM (gabmus)](https://gitlab.com/gabmus/vim-blueprint/-/tree/master).
+- [GNU Emacs (DrBluefall)](https://github.com/DrBluefall/blueprint-mode).
+- [Visual Studio Code (Bodil Stokke)](https://marketplace.visualstudio.com/items?itemName=bodil.blueprint-gtk).
+- [VIM (thetek42)](https://github.com/thetek42/vim-blueprint-syntax).
+- [VIM (gabmus)](https://gitlab.com/gabmus/vim-blueprint/-/tree/master).

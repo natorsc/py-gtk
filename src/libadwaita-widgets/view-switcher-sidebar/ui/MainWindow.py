@@ -28,8 +28,16 @@ Adw.init()
 class ExampleWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
 
+    adw_navigation_split_view = Gtk.Template.Child(
+        name='adw_navigation_split_view'
+    )
+
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
+
+    @Gtk.Template.Callback()
+    def on_view_switcher_sidebar_activated_cb(self, widget):
+        self.adw_navigation_split_view.set_show_content(show_content=True)
 
 
 class ExampleApplication(Adw.Application):

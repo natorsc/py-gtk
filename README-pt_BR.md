@@ -54,6 +54,7 @@ Sua doação mantém este projeto vivo e me ajuda a continuar criando e comparti
 - [Instalar Python e GTK no Microsoft Windows](./docs/install-gtk-windows-pt_BR.md).
 - [Instalar Python e GTK no Microsoft Windows WSL 2](./docs/install-gtk-windows-wsl2-pt_BR.md).
 - [Instalar a linguagem de marcação Blueprint](./docs/install-blueprint-markup-language-pt_BR.md).
+- [Configurar a linguagem de marcação Blueprint no Gnome Builder](./docs/setup-blueprint-gnome-builder-pt_BR.md).
 
 ## 💡 Extra
 

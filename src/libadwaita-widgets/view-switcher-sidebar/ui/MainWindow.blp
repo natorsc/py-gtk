@@ -6,12 +6,50 @@ template $ExampleWindow: Adw.ApplicationWindow {
   default-width: 683;
   default-height: 384;
 
-  content: Adw.ToolbarView {
-    [top]
-    Adw.HeaderBar header_bar {}
+Adw.Breakpoint {
+    condition ("max-width: 600sp")
 
-    content: Adw.StatusPage {
-      title: "Hello World!";
+    setters {
+      adw_navigation_split_view.collapsed: true;
+    }
+  }
+
+  content: Adw.NavigationSplitView adw_navigation_split_view {
+    sidebar: Adw.NavigationPage {
+      tag: "sidebar";
+      title: _("Sidebar");
+      Adw.ToolbarView {
+        [top]
+        Adw.HeaderBar {}
+        content:  Adw.ViewSwitcherSidebar {
+          stack: stack;
+          activated => $on_view_switcher_sidebar_activated_cb();
+        };
+      }
+    };
+    content: Adw.NavigationPage {
+      tag: "content";
+      title: _("Content");
+      Adw.ToolbarView {
+        [top]
+        Adw.HeaderBar {}
+        content:  Adw.ViewStack stack {
+          Adw.ViewStackPage {
+            name: "page-01";
+            title: "Page 01";
+            child: Adw.StatusPage {
+              title: "Page 01";
+            };
+          }
+          Adw.ViewStackPage {
+            name: "page-02";
+            title: "Page 02";
+            child: Adw.StatusPage {
+              title: "Page 02";
+            };
+          }
+        };
+      }
     };
   };
 }
