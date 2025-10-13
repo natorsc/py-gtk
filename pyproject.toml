@@ -11,6 +11,7 @@ dependencies = [
 [dependency-groups]
 dev = [
     "pygobject-stubs>=2.13.0",
+    "pytest>=8.4.2",
     "ruff>=0.13.2",
     "taskipy>=1.14.1",
 ]
