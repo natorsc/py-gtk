@@ -20,6 +20,7 @@ format = {composite = [
     "ruff check .",
     "ruff format .",
 ]}
+format-blp = "blueprint-compiler format -f -n src"
 
 [tool.ruff]
 fix = true
