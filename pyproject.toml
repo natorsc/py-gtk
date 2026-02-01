@@ -2,11 +2,17 @@
 name = "py-gtk"
 version = "0.1.0"
 description = "Creating graphical interfaces with Python (PyGObject) and GTK"
-readme = "README.md"
-requires-python = ">=3.12,<3.15"
-dependencies = [
-    "pygobject>=3.54.5",
+authors = [
+    {name = "Renato Cruz", email = "natorsc@gmail.com"},
 ]
+dependencies = ["pygobject>=3.54.5"]
+requires-python = ">=3.12,<3.15"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
 
 [dependency-groups]
 dev = [
@@ -14,21 +20,3 @@ dev = [
     "pytest>=9.0.2",
     "ruff>=0.14.14",
 ]
-
-[tool.pdm.scripts]
-format = {composite = [
-    "ruff check .",
-    "ruff format .",
-]}
-format-blp = "blueprint-compiler format -f -n src"
-
-[tool.ruff]
-fix = true
-line-length = 79
-extend-exclude = ["docs", ".venv"]
-
-[tool.ruff.format]
-quote-style = "single"
-
-[tool.ruff.lint]
-select = ["I", "F", "E", "W", "PL", "PT", "UP", "E501"]
