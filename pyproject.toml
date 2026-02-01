@@ -5,28 +5,29 @@ description = "Creating graphical interfaces with Python (PyGObject) and GTK"
 readme = "README.md"
 requires-python = ">=3.12,<3.15"
 dependencies = [
-    "pygobject>=3.54.3",
+    "pygobject>=3.54.5",
 ]
 
 [dependency-groups]
 dev = [
-    "pygobject-stubs>=2.13.0",
-    "pytest>=8.4.2",
-    "ruff>=0.13.2",
-    "taskipy>=1.14.1",
+    "pygobject-stubs>=2.16.0",
+    "pytest>=9.0.2",
+    "ruff>=0.14.14",
 ]
 
+[tool.pdm.scripts]
+format = {composite = [
+    "ruff check .",
+    "ruff format .",
+]}
+
 [tool.ruff]
+fix = true
 line-length = 79
 extend-exclude = ["docs", ".venv"]
-
-[tool.ruff.lint]
-select = ["I", "F", "E", "W", "PL", "PT"]
 
 [tool.ruff.format]
 quote-style = "single"
 
-[tool.taskipy.tasks]
-format = "ruff check . --select I --fix && ruff format ."
-format-blp = "blueprint-compiler format -f -n src"
-outdated = "uv tree --outdated --depth=1"
+[tool.ruff.lint]
+select = ["I", "F", "E", "W", "PL", "PT", "UP", "E501"]
