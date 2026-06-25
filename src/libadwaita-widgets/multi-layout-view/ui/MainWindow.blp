@@ -1,0 +1,108 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $ExampleWindow: Adw.ApplicationWindow {
+  title: "Python - PyGObject - GTK";
+  default-width: 683;
+  default-height: 384;
+
+  content: Adw.MultiLayoutView adw_multi_layout_view {
+    // Layout 01.
+    Adw.Layout {
+      name: "desktop";
+
+      content: Adw.OverlaySplitView adw_overlay_split_view {
+        sidebar: Adw.LayoutSlot {
+          id: "slot-sidebar";
+        };
+
+        content: Adw.LayoutSlot {
+          id: "slot-content";
+        };
+      };
+    }
+
+    // Layout 02.
+    Adw.Layout {
+      name: "mobile";
+
+      content: Adw.BottomSheet {
+        content: Adw.LayoutSlot {
+          id: "slot-content";
+        };
+
+        [bottom-bar]
+        Gtk.Box {
+          orientation: vertical;
+          spacing: 12;
+          margin-top: 12;
+          margin-bottom: 12;
+          margin-start: 12;
+          margin-end: 12;
+
+          Gtk.Label {
+            label: "Adw.BottomSheet bottom-bar";
+          }
+        }
+
+        [sheet]
+        Adw.LayoutSlot {
+          id: "slot-sidebar";
+        }
+      };
+    }
+
+    [slot-sidebar]
+    Gtk.Box {
+      orientation: vertical;
+      spacing: 12;
+      margin-top: 20;
+      margin-bottom: 12;
+      margin-start: 12;
+      margin-end: 12;
+
+      Gtk.ListBox {
+        Gtk.ListBoxRow {
+          Gtk.Label {
+            label: "Item 01";
+          }
+        }
+
+        Gtk.ListBoxRow {
+          Gtk.Label {
+            label: "Item 02";
+          }
+        }
+
+        Gtk.ListBoxRow {
+          Gtk.Label {
+            label: "Item 03";
+          }
+        }
+
+        styles [
+          "navigation-sidebar",
+        ]
+      }
+    }
+
+    [slot-content]
+    Adw.ToolbarView {
+      [top]
+      Adw.HeaderBar {}
+
+      content: Adw.StatusPage {
+        title: "Adw.MultiLayoutView.";
+        description: "Adw.Layout - Adw.LayoutSlot";
+      };
+    }
+  };
+
+  Adw.Breakpoint {
+    condition ("max-width: 600")
+
+    setters {
+      adw_multi_layout_view.layout-name: "mobile";
+    }
+  }
+}

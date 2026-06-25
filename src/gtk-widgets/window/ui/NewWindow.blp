@@ -1,0 +1,22 @@
+using Gtk 4.0;
+
+template $NewWindow: Gtk.Window {
+  title: "Python - PyGObject - GTK";
+  modal: true;
+  default-width: 600;
+  default-height: 300;
+
+  Gtk.Box {
+    orientation: vertical;
+    margin-top: 12;
+    margin-end: 12;
+    margin-bottom: 12;
+    margin-start: 12;
+    spacing: 12;
+
+    Gtk.Button {
+      label: "Close window";
+      clicked => $on_button_close_clicked();
+    }
+  }
+}

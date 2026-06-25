@@ -1,0 +1,52 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $ExampleWindow: Adw.ApplicationWindow {
+  title: "Python - PyGObject - GTK";
+  default-width: 683;
+  default-height: 384;
+
+  content: Adw.ToolbarView {
+    [top]
+    Adw.HeaderBar header_bar {}
+
+    content: Gtk.Box {
+      orientation: vertical;
+      margin-top: 12;
+      margin-end: 12;
+      margin-bottom: 12;
+      margin-start: 12;
+      spacing: 12;
+
+      Gtk.ListBox {
+        // selection-mode: none;
+        styles [
+          "boxed-list",
+          // "navigation-sidebar",
+          ,
+        ]
+
+        Adw.ButtonRow {
+          title: "Adw.ButtonRow 1";
+          start-icon-name: "go-previous-symbolic";
+          end-icon-name: "go-next-symbolic";
+          activated => $on_button_activated();
+        }
+
+        Adw.ButtonRow {
+          title: "Adw.ButtonRow 2";
+          start-icon-name: "go-previous-symbolic";
+          end-icon-name: "go-next-symbolic";
+          activated => $on_button_activated();
+        }
+
+        Adw.ButtonRow {
+          title: "Adw.ButtonRow 3";
+          start-icon-name: "go-previous-symbolic";
+          end-icon-name: "go-next-symbolic";
+          activated => $on_button_activated();
+        }
+      }
+    };
+  };
+}

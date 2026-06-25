@@ -1,0 +1,89 @@
+using Gtk 4.0;
+using Gio 2.0;
+
+template $ExampleWindow: Gtk.ApplicationWindow {
+  title: "Python - PyGObject - GTK";
+  default-width: 683;
+  default-height: 384;
+
+  [titlebar]
+  Gtk.HeaderBar header_bar {
+    [end]
+    Gtk.MenuButton {
+      icon-name: "open-menu-symbolic";
+      menu-model: primary_menu;
+    }
+  }
+
+  Gtk.Box {
+    orientation: vertical;
+    margin-top: 12;
+    margin-end: 12;
+    margin-bottom: 12;
+    margin-start: 12;
+    spacing: 12;
+
+    Gtk.Button {
+      label: "Select file";
+      clicked => $on_button_select_file_clicked();
+    }
+
+    Gtk.Button {
+      label: "Select files";
+      clicked => $on_button_select_files_clicked();
+    }
+  }
+}
+
+Gtk.FileFilter filter_all_files {
+  name: "All";
+
+  patterns [
+    "*",
+  ]
+
+  suffixes [
+    "*",
+  ]
+}
+
+Gtk.FileFilter filter_py_files {
+  mime-types [
+    "text/x-python",
+  ]
+
+  patterns [
+    "*.py",
+  ]
+
+  suffixes [
+    "py",
+  ]
+}
+
+Gtk.FileFilter filter_txt_files {
+  mime-types [
+    "text/plain",
+  ]
+
+  patterns [
+    "*.txt",
+  ]
+
+  suffixes [
+    "txt",
+  ]
+}
+
+Gio.ListStore gio_list_store {
+  item-type: typeof<Gtk.FileFilter>;
+}
+
+menu primary_menu {
+  section {
+    item {
+      label: _("Preferences");
+      action: "app.preferences";
+    }
+  }
+}

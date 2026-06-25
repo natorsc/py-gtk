@@ -1,0 +1,56 @@
+using Gtk 4.0;
+
+template $ExampleWindow: Gtk.ApplicationWindow {
+  title: "Python - PyGObject - GTK";
+  default-width: 683;
+  default-height: 384;
+
+  [titlebar]
+  Gtk.HeaderBar header_bar {
+    [end]
+    Gtk.MenuButton {
+      icon-name: "open-menu-symbolic";
+      menu-model: primary_menu;
+    }
+  }
+
+  Gtk.Overlay overlay {
+    [overlay]
+    Gtk.Box {
+      orientation: vertical;
+      homogeneous: true;
+      margin-top: 12;
+      margin-end: 12;
+      margin-bottom: 12;
+      margin-start: 12;
+      spacing: 12;
+
+      Gtk.Button {
+        label: "This Button is below the others";
+      }
+    }
+
+    [overlay]
+    Gtk.Button {
+      icon-name: "go-previous";
+      halign: start;
+      valign: center;
+    }
+
+    [overlay]
+    Gtk.Button {
+      icon-name: "go-next";
+      halign: end;
+      valign: center;
+    }
+  }
+}
+
+menu primary_menu {
+  section {
+    item {
+      label: _("Preferences");
+      action: "app.preferences";
+    }
+  }
+}

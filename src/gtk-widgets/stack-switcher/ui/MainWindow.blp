@@ -1,0 +1,87 @@
+using Gtk 4.0;
+
+template $ExampleWindow: Gtk.ApplicationWindow {
+  title: "Python - PyGObject - GTK";
+  default-width: 683;
+  default-height: 384;
+
+  [titlebar]
+  Gtk.HeaderBar {
+    title-widget: Gtk.StackSwitcher {
+      stack: stack;
+    };
+
+    [end]
+    Gtk.MenuButton {
+      icon-name: "open-menu-symbolic";
+      menu-model: primary_menu;
+    }
+  }
+
+  Gtk.Box {
+    orientation: vertical;
+    homogeneous: true;
+    margin-top: 12;
+    margin-end: 12;
+    margin-bottom: 12;
+    margin-start: 12;
+    spacing: 12;
+
+    Gtk.Stack stack {
+      vexpand: true;
+
+      Gtk.StackPage {
+        name: "page1";
+        title: "Page 1";
+
+        child: Gtk.Box {
+          orientation: vertical;
+          spacing: 6;
+
+          Gtk.Button {
+            label: "Button 01";
+          }
+
+          Gtk.Button {
+            label: "Button 02";
+          }
+
+          Gtk.Button {
+            label: "Button 03";
+          }
+        };
+      }
+
+      Gtk.StackPage {
+        name: "page2";
+        title: "Page 2";
+
+        child: Gtk.Box {
+          orientation: vertical;
+          spacing: 6;
+
+          Gtk.Label {
+            label: "Line 01";
+          }
+
+          Gtk.Label {
+            label: "Line 02";
+          }
+
+          Gtk.Label {
+            label: "Line 03";
+          }
+        };
+      }
+    }
+  }
+}
+
+menu primary_menu {
+  section {
+    item {
+      label: _("Preferences");
+      action: "app.preferences";
+    }
+  }
+}

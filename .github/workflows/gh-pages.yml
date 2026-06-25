@@ -1,0 +1,17 @@
+name: GitHub Pages
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Install docs dependencies
+        run: pip install mkdocs-material mkdocs-static-i18n ghp-import
+      - name: Deploy documentation
+        run: mkdocs gh-deploy --force

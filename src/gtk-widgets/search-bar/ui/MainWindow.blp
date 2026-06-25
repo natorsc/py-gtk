@@ -1,0 +1,66 @@
+using Gtk 4.0;
+
+template $ExampleWindow: Gtk.ApplicationWindow {
+  title: "Python - PyGObject - GTK";
+  default-width: 683;
+  default-height: 384;
+
+  [titlebar]
+  Gtk.HeaderBar header_bar {
+    [start]
+    Gtk.ToggleButton {
+      icon-name: "system-search-symbolic";
+      clicked => $on_button_show_searchbar_clicked();
+    }
+
+    [end]
+    Gtk.MenuButton {
+      icon-name: "open-menu-symbolic";
+      menu-model: primary_menu;
+    }
+  }
+
+  Gtk.Overlay overlay {
+    [overlay]
+    Gtk.SearchBar search_bar {
+      child: entry;
+      halign: start;
+      valign: start;
+
+      styles [
+        "inline",
+      ]
+    }
+
+    [overlay]
+    Gtk.Box {
+      orientation: vertical;
+      margin-top: 12;
+      margin-end: 12;
+      margin-bottom: 12;
+      margin-start: 12;
+      spacing: 12;
+
+      Gtk.Label {
+        label: "Click on the search icon.";
+        vexpand: true;
+      }
+    }
+  }
+}
+
+Gtk.Entry entry {
+  // primary-icon-name: "system-search-symbolic";
+  secondary-icon-name: "system-search-symbolic";
+  activate => $on_key_enter_pressed();
+  icon-press => $on_icon_pressed();
+}
+
+menu primary_menu {
+  section {
+    item {
+      label: _("Preferences");
+      action: "app.preferences";
+    }
+  }
+}

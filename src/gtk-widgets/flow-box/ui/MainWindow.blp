@@ -1,0 +1,61 @@
+using Gtk 4.0;
+
+template $ExampleWindow: Gtk.ApplicationWindow {
+  title: "Python - PyGObject - GTK";
+  default-width: 683;
+  default-height: 384;
+
+  [titlebar]
+  Gtk.HeaderBar header_bar {
+    [end]
+    Gtk.MenuButton {
+      icon-name: "open-menu-symbolic";
+      menu-model: primary_menu;
+    }
+  }
+
+  Gtk.ScrolledWindow {
+    Gtk.FlowBox {
+      margin-top: 12;
+      margin-end: 12;
+      margin-bottom: 12;
+      margin-start: 12;
+      valign: start;
+      max-children-per-line: 5;
+      selection-mode: none;
+
+      Gtk.Button {
+        label: "Button 01";
+      }
+
+      Gtk.Button {
+        label: "Button 02";
+      }
+
+      Gtk.Button {
+        label: "Button 03";
+      }
+
+      Gtk.Button {
+        label: "Button 04";
+      }
+
+      Gtk.Button {
+        label: "Button 05";
+      }
+
+      Gtk.Button {
+        label: "Button 06";
+      }
+    }
+  }
+}
+
+menu primary_menu {
+  section {
+    item {
+      label: _("Preferences");
+      action: "app.preferences";
+    }
+  }
+}

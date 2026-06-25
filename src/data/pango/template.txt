@@ -1,0 +1,662 @@
+<big><b>font</b></big>
+
+Values:
+
+1. <b>"Sans"</b>.
+2. <b>"Roboto"</b>.
+3. <b>Etc</b>.
+
+Results:
+
+1. <span font="Sans">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span font="Roboto">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>font_desc</b></big>
+
+Values:
+
+1. <b>"Sans Italic"</b>.
+2. <b>"Sans Italic 14"</b>.
+
+Results:
+
+<span font_desc="Sans Italic">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+<span font_desc="Sans Italic 14">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>font_family</b></big>
+
+Values:
+
+1. <b>"Sans Italic"</b>.
+2. <b>"Roboto Italic"</b>.
+
+Results:
+
+1. <span font_family="Sans Italic">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span font_family="Roboto Italic">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>face</b></big>
+
+Values:
+
+1. <b>"Sans Bold 12pt"</b>.
+2. <b>"Roboto Bold 12pt"</b>.
+
+Results:
+
+1. <span face="Sans Bold 12pt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span face="Roboto Bold 12pt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>font_size</b></big>
+
+Values:
+
+1. <b>"12"</b>.
+2. <b>"14"</b>.
+
+Results:
+
+1. <span font_size="12">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span font_size="14">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>size</b></big>
+
+Values:
+
+1. <b>"xx-small"</b>.
+2. <b>"x-small"</b>.
+3. <b>"small"</b>.
+4. <b>"medium"</b>.
+5. <b>"large"</b>.
+6. <b>"x-large"</b>.
+7. <b>"xx-large"</b>.
+8. <b>"200%"</b>.
+9. <b>"14"</b>.
+10. <b>"12.5pt"</b>.
+
+Results:
+
+1. <span size="xx-small">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span size="x-small">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+3. <span size="small">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+4. <span size="medium">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+5. <span size="large">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+6. <span size="x-large">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+7. <span size="xx-large">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+8. <span size="200%">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+9. <span size="14">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+10. <span size="12.5pt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>font_style</b></big>
+
+Values:
+
+1. <b>"normal"</b>.
+2. <b>"oblique"</b>.
+3. <b>"italic"</b>.
+
+Results:
+
+1. Lorem <span style="normal">Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. Lorem <span style="oblique">Ipsum is simply dummy text of the printing and typesetting industry.</span>
+3. Lorem <span style="italic">Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>style</b></big>
+
+Values:
+
+1. <b>"normal"</b>.
+2. <b>"oblique"</b>.
+3. <b>"italic"</b>.
+
+Results:
+
+1. Lorem <span style="normal">Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. Lorem <span style="oblique">Ipsum is simply dummy text of the printing and typesetting industry.</span>
+3. Lorem <span style="italic">Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>font_weight</b></big>
+
+Values:
+
+1. <b>"ultralight"</b>.
+2. <b>"light"</b>.
+3. <b>"normal"</b>.
+4. <b>"bold"</b>.
+5. <b>"ultrabold"</b>.
+6. <b>"heavy"</b>.
+7. <b>"20"</b>.
+
+Results:
+
+1. <span font_weight="ultralight">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span font_weight="light">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+3. <span font_weight="normal">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+4. <span font_weight="bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+5. <span font_weight="ultrabold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+6. <span font_weight="heavy">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+7. <span font_weight="20">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>weight</b></big>
+
+Values:
+
+1. <b>"ultralight"</b>.
+2. <b>"light"</b>.
+3. <b>"normal"</b>.
+4. <b>"bold"</b>.
+5. <b>"ultrabold"</b>.
+6. <b>"heavy"</b>.
+7. <b>"20"</b>.
+
+Results:
+
+1. <span weight="ultralight">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span weight="light">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+3. <span weight="normal">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+4. <span weight="bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+5. <span weight="ultrabold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+6. <span weight="heavy">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+7. <span weight="20">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>font_variant</b></big>
+
+Values:
+
+1. "normal".
+2. "small-caps".
+3. "all-small-caps".
+4. "petite-caps".
+5. "all-petite-caps".
+6. "unicase".
+7. "title-caps". 
+
+Results:
+
+1. <span font_variant="normal">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span font_variant="small-caps">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+3. <span font_variant="all-small-caps">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+4. <span font_variant="petite-caps">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+5. <span font_variant="all-petite-caps">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+6. <span font_variant="unicase">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+7. <span font_variant="title-caps">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>variant</b></big>
+
+Values:
+
+1. "normal".
+2. "small-caps".
+3. "all-small-caps".
+4. "petite-caps".
+5. "all-petite-caps".
+6. "unicase".
+7. "title-caps". 
+
+Results:
+
+1. <span variant="normal">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span variant="small-caps">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+3. <span variant="all-small-caps">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+4. <span variant="petite-caps">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+5. <span variant="all-petite-caps">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+6. <span variant="unicase">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+7. <span variant="title-caps">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>font_stretch</b></big>
+
+Values:
+
+1. <b>ultracondensed</b>.
+2. <b>extracondensed</b>.
+3. <b>condensed</b>.
+4. <b>semicondensed</b>.
+5. <b>normal</b>.
+6. <b>semiexpanded</b>.
+7. <b>expanded</b>.
+8. <b>extraexpanded</b>.
+9. <b>ultraexpanded</b>.
+
+Results:
+
+1. <span font_stretch="ultracondensed">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span font_stretch="extracondensed">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+3. <span font_stretch="condensed">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+4. <span font_stretch="semicondensed">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+5. <span font_stretch="normal">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+6. <span font_stretch="semiexpanded">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+7. <span font_stretch="expanded">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+8. <span font_stretch="extraexpanded">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+9. <span font_stretch="ultraexpanded">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>stretch</b></big>
+
+Values:
+
+1. <b>ultracondensed</b>.
+2. <b>extracondensed</b>.
+3. <b>condensed</b>.
+4. <b>semicondensed</b>.
+5. <b>normal</b>.
+6. <b>semiexpanded</b>.
+7. <b>expanded</b>.
+8. <b>extraexpanded</b>.
+9. <b>ultraexpanded</b>.
+
+Results:
+
+1. <span stretch="ultracondensed">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span stretch="extracondensed">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+3. <span stretch="condensed">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+4. <span stretch="semicondensed">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+5. <span stretch="normal">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+6. <span stretch="semiexpanded">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+7. <span stretch="expanded">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+8. <span stretch="extraexpanded">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+9. <span stretch="ultraexpanded">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>font_features</b></big>
+
+Valor:
+
+1. <b>dlig=1, -kern, afrc on</b>.
+
+Resultado:
+
+1. <span font_features="dlig=1, -kern, afrc on">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>foreground</b></big>
+
+Values:
+
+1. <b>"#00FF00"</b>.
+2. <b>"green"</b>.
+
+Results:
+
+1. <span foreground="#00FF00">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span foreground="green">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>fgcolor</b></big>
+
+Values:
+
+1. <b>"#00FF00"</b>.
+2. <b>"green"</b>.
+
+Results:
+
+1. <span fgcolor="#00FF00">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span fgcolor="green">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>color</b></big>
+
+Values:
+
+1. <b>"#00FF00"</b>.
+2. <b>"green"</b>.
+
+Results:
+
+1. <span color="#00FF00">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span color="green">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>background</b></big>
+
+Values:
+
+1. <b>"#00FF00"</b>.
+2. <b>"green"</b>.
+
+Results:
+
+1. <span background="#00FF00">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span background="green">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>bgcolor</b></big>
+
+Values:
+
+1. <b>"#00FF00"</b>.
+2. <b>"green"</b>.
+
+Results:
+
+1. <span bgcolor="#00FF00">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span bgcolor="green">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>alpha</b></big>
+
+Values:
+
+1. <b>"10"</b>. Valor entre 1 e 65536.
+2. <b>"50%"</b>.
+
+Results:
+
+1. <span alpha="10">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span alpha="50%">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>fgalpha</b></big>
+
+Values:
+
+1. <b>"10"</b>. Valor entre 1 e 65536.
+2. <b>"50%"</b>.
+
+Results:
+
+1. <span fgalpha="10">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span fgalpha="50%">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>background_alpha</b></big>
+
+Values:
+
+1. <b>"10"</b>. Valor entre 1 e 65536.
+2. <b>"50%"</b>.
+
+Results:
+
+1. <span background_alpha="10">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span background_alpha="50%">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>bgalpha</b></big>
+
+Values:
+
+1. <b>"10"</b>. Valor entre 1 e 65536.
+2. <b>"50%"</b>.
+
+Results:
+
+1. <span bgalpha="10">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span bgalpha="50%">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>underline</b></big>
+
+Values:
+
+1. <b>"none"</b>.
+2. <b>"single"</b>.
+3. <b>"double"</b>.
+4. <b>"low"</b>.
+5. <b>"error"</b>.
+
+Results:
+
+1. <span underline="none">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span underline="single">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+3. <span underline="double">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+4. <span underline="low">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+5. <span underline="error">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>underline_color</b></big>
+
+Values:
+
+1. <b>"#00FF00"</b>.
+2. <b>"green"</b>.
+
+Results:
+
+1. <span underline_color="#00FF00">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span underline_color="green">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>overline</b></big>
+
+Values:
+
+1. <b>"none"</b>.
+2. <b>"single"</b>.
+
+Results:
+
+1. <span overline="none">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span overline="single">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>overline_color</b></big>
+
+Values:
+
+1. <b>"#00FF00"</b>.
+2. <b>"green"</b>.
+
+Results:
+
+1. <span overline_color="#00FF00">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span overline_color="green">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>rise</b></big>
+
+Values:
+
+1. <b>"6pt"</b>.
+2. <b>"12pt"</b>.
+
+Results:
+
+1. <span rise="6pt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span rise="12pt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>baseline_shift</b></big>
+
+Values:
+
+1. <b>"6pt"</b>.
+2. <b>"12pt"</b>.
+
+Results:
+
+1. <span baseline_shift="6pt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span baseline_shift="12pt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>font_scale</b></big>
+
+Values:
+
+1. <b>"superscript"</b>.
+2. <b>"subscript"</b>.
+3. <b>"small-caps"</b>.
+
+Results:
+
+1. <span font_scale="superscript">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span font_scale="subscript">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+3. <span font_scale="small-caps">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>strikethrough</b></big>
+
+Values:
+
+1. <b>"true"</b>.
+2. <b>"false"</b>.
+
+Results:
+
+1. <span strikethrough="true">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span strikethrough="false">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>strikethrough_color</b></big>
+
+Values:
+
+1. <b>"#00FF00"</b>.
+2. <b>"green"</b>.
+
+Results:
+
+1. <span strikethrough_color="#00FF00">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span strikethrough_color="green">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>fallback</b></big>
+
+Values:
+
+1. <b>"true"</b>.
+2. <b>"false"</b>.
+
+Results:
+
+1. <span fallback="true">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span fallback="false">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>lang</b></big>
+
+Values:
+
+1. <b>"en_US"</b>.
+2. <b>"pt_BR"</b>.
+
+Results:
+
+1. <span lang="en_US">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span lang="pt_BR">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>letter_spacing</b></big>
+
+Values:
+
+1. <b>"5"</b>.
+2. <b>"10"</b>.
+
+Results:
+
+1. <span letter_spacing="5">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span letter_spacing="10">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>gravity</b></big>
+
+Values:
+
+1. <b>south</b>.
+2. <b>east</b>.
+3. <b>north</b>.
+4. <b>west</b>.
+
+Results:
+
+1. <span gravity="south">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span gravity="east">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+3. <span gravity="north">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+4. <span gravity="west">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>gravity_hint</b></big>
+
+Values:
+
+1. <b>natural</b>.
+2. <b>strong</b>.
+3. <b>line</b>.
+
+Results:
+
+1. <span gravity_hint="natural">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span gravity_hint="strong">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+3. <span gravity_hint="line">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>show</b></big>
+
+Values:
+
+1. <b>none</b>.
+2. <b>spaces</b>.
+3. <b>line-breaks</b>.
+4. <b>ignorables</b>.
+
+Results:
+
+1. <span show="none">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span show="spaces">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+3. <span show="line-breaks">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+4. <span show="ignorables">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>insert_hyphens</b></big>
+
+Values:
+
+1. <b>true</b>.
+2. <b>false</b>.
+
+Results:
+
+1. <span insert_hyphens="true">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span insert_hyphens="false">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>allow_breaks</b></big>:
+
+Values:
+
+1. <b>true</b>.
+2. <b>false</b>.
+
+Results:
+
+1. <span allow_breaks="true">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span allow_breaks="false">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>line_height</b></big>:
+
+Values:
+
+1. <b>1</b>.
+2. <b>10</b>.
+
+Results:
+
+1. <span line_height="1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span line_height="10">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>text_transform</b></big>.
+
+Values:
+
+1. <b>none</b>.
+2. <b>lowercase</b>.
+3. <b>uppercase</b>.
+4. <b>capitalize</b>.
+
+Results:
+
+1. <span text_transform="none">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. <span text_transform="lowercase">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+3. <span text_transform="uppercase">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+4. <span text_transform="capitalize">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<big><b>segment</b></big>:
+
+Values:
+
+1. <b>sentence</b>.
+2. <b>word</b>.
+
+Results:
+
+1. Lorem <span segment="sentence">Ipsum is simply dummy text of the printing and typesetting industry.</span>
+2. Lorem <span segment="word">Ipsum is simply dummy text of the printing and typesetting industry.</span>
+
+<span size="xx-large">Tags de conveniência</span>
+
+O Pango também fornece algumas tags que facilitam a aplicação de alguns estilos as fontes:
+
+1. <b>b</b>: Negrito.
+2. <b>big</b>: Torna a fonte grande, equivalente ao <b>size=larger</b>.
+3. <b>i</b>: Itálico.
+4. <b>s</b>: Riscado (tachado).
+5. <b>sub</b>: subscrito.
+6. <b>sup</b>: Sobrescrito.
+7. <b>small</b>: Torna a fonte pequena, equivalente ao <b>size=smaller</b>.
+8. <b>tt</b>: Monospace.
+9. <b>u</b>: Sublinhar.
+
+Results:
+
+1. <b>Lorem Ipsum is simply dummy text of the printing and typesetting industry</b>.
+2. <big>Lorem Ipsum is simply dummy text of the printing and typesetting industry</big>.
+3. <i>Lorem Ipsum is simply dummy text of the printing and typesetting industry</i>.
+4. <s>Lorem Ipsum is simply dummy text of the printing and typesetting industry</s>.
+5. <sub>Lorem Ipsum is simply dummy text of the printing and typesetting industry</sub>.
+6. <sup>Lorem Ipsum is simply dummy text of the printing and typesetting industry</sup>.
+7. <small>Lorem Ipsum is simply dummy text of the printing and typesetting industry</small>.
+8. <tt>Lorem Ipsum is simply dummy text of the printing and typesetting industry</tt>.
+9. <u>Lorem Ipsum is simply dummy text of the printing and typesetting industry</u>.

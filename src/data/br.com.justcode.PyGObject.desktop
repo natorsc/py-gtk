@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Exemplo
+Icon=/home/natorsc/.icons/br.com.justcode.Gtk/br.com.justcode.Gtk.png
+Path=/home/natorsc/Projetos/gui-python-gtk
+Exec=bash -c "poetry shell && python src/gtk4/actionbar/MainWindow.py" %f
+Comment=Exemplo
+Categories=Development;IDE;
+Terminal=false
+StartupWMClass=br.com.justcode.Gtk
+StartupNotify=true

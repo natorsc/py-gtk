@@ -1,0 +1,32 @@
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS "brazilian_states" (
+	"state"	TEXT
+);
+INSERT INTO "brazilian_states" VALUES ('Acre');
+INSERT INTO "brazilian_states" VALUES ('Alagoas');
+INSERT INTO "brazilian_states" VALUES ('Amapá');
+INSERT INTO "brazilian_states" VALUES ('Amazonas');
+INSERT INTO "brazilian_states" VALUES ('Bahia');
+INSERT INTO "brazilian_states" VALUES ('Ceará');
+INSERT INTO "brazilian_states" VALUES ('Distrito Federal');
+INSERT INTO "brazilian_states" VALUES ('Espírito Santo');
+INSERT INTO "brazilian_states" VALUES ('Goiás');
+INSERT INTO "brazilian_states" VALUES ('Maranhão');
+INSERT INTO "brazilian_states" VALUES ('Mato Grosso');
+INSERT INTO "brazilian_states" VALUES ('Mato Grosso do Sul');
+INSERT INTO "brazilian_states" VALUES ('Minas Gerais');
+INSERT INTO "brazilian_states" VALUES ('Pará');
+INSERT INTO "brazilian_states" VALUES ('Paraíba');
+INSERT INTO "brazilian_states" VALUES ('Paraná');
+INSERT INTO "brazilian_states" VALUES ('Pernambuco');
+INSERT INTO "brazilian_states" VALUES ('Piauí');
+INSERT INTO "brazilian_states" VALUES ('Rio de Janeiro');
+INSERT INTO "brazilian_states" VALUES ('Rio Grande do Norte');
+INSERT INTO "brazilian_states" VALUES ('Rio Grande do Sul');
+INSERT INTO "brazilian_states" VALUES ('Rondônia');
+INSERT INTO "brazilian_states" VALUES ('Roraima');
+INSERT INTO "brazilian_states" VALUES ('Santa Catarina');
+INSERT INTO "brazilian_states" VALUES ('São Paulo');
+INSERT INTO "brazilian_states" VALUES ('Sergipe');
+INSERT INTO "brazilian_states" VALUES ('Tocantins');
+COMMIT;

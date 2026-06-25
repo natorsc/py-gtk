@@ -1,0 +1,75 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $ExampleWindow: Adw.ApplicationWindow {
+  title: "Python - PyGObject - GTK";
+  default-width: 683;
+  default-height: 384;
+
+  content: Adw.ToolbarView {
+    [top]
+    Adw.HeaderBar header_bar {}
+
+    content: Gtk.Box {
+      orientation: vertical;
+      spacing: 12;
+      margin-top: 12;
+      margin-end: 12;
+      margin-bottom: 12;
+      margin-start: 12;
+
+      Adw.SplitButton {
+        halign: center;
+        popover: popover_menu;
+        clicked => $on_split_button_clicked();
+
+        child: Adw.ButtonContent {
+          icon-name: "document-open-symbolic";
+          label: _("_Open");
+          use-underline: true;
+        };
+      }
+    };
+  };
+}
+
+PopoverMenu popover_menu {
+  menu-model: adw_split_button_menu;
+}
+
+menu adw_split_button_menu {
+  section {
+    item {
+      label: _("Item 01");
+      action: "app.split-button-menu-item-activate";
+    }
+
+    submenu {
+      label: _("Submenu");
+
+      item {
+        label: _("Item 02");
+        action: "app.split-button-menu-item-activate";
+      }
+    }
+
+    section {
+      label: _("Edit");
+
+      item {
+        label: _("Item 03");
+        action: "app.split-button-menu-item-activate";
+      }
+
+      item {
+        label: _("Item 04");
+        action: "app.split-button-menu-item-activate";
+      }
+    }
+
+    item {
+      label: _("Exit");
+      action: "app.quit";
+    }
+  }
+}

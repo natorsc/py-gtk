@@ -1,0 +1,43 @@
+using Gtk 4.0;
+
+template $ExampleWindow: Gtk.ApplicationWindow {
+  title: "Python - PyGObject - GTK";
+  default-width: 683;
+  default-height: 384;
+
+  [titlebar]
+  Gtk.HeaderBar header_bar {
+    [end]
+    Gtk.MenuButton menu_button {
+      icon-name: "open-menu-symbolic";
+      menu-model: primary_menu;
+    }
+  }
+}
+
+menu primary_menu {
+  section {
+    item {
+      label: _("Preferences");
+      action: "app.preferences";
+    }
+  }
+
+  section {
+    label: _("Section title");
+    // Shorthand (forma abreviada).
+    item ("Item 01", "win.item1")
+    item ("Item 02", "win.item2")
+  }
+
+  submenu {
+    label: _("Sub-menu title");
+
+    item {
+      label: _("Item 03");
+      action: "win.item3";
+    }
+
+    item ("Item 04", "win.item4")
+  }
+}

@@ -1,0 +1,43 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $Sidebar: Adw.NavigationPage {
+  title: "Sidebar";
+  tag: "sidebar";
+
+  child: Adw.ToolbarView {
+    [top]
+    Adw.HeaderBar {
+      [start]
+      Gtk.MenuButton {
+        icon-name: "system-search";
+      }
+
+      [end]
+      Gtk.MenuButton {
+        icon-name: "open-menu-symbolic";
+        menu-model: primary_menu;
+      }
+    }
+
+    content: Gtk.ScrolledWindow {
+      Gtk.ListBox list_box {
+        selection-mode: none;
+        row-activated => $on_row_clicked_change_page();
+
+        styles [
+          "navigation-sidebar",
+        ]
+      }
+    };
+  };
+}
+
+menu primary_menu {
+  section {
+    item {
+      label: _("Preferences");
+      action: "app.preferences";
+    }
+  }
+}

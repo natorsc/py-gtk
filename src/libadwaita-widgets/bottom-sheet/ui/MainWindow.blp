@@ -1,0 +1,214 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $ExampleWindow: Adw.ApplicationWindow {
+  title: "Python - PyGObject - GTK";
+  default-width: 683;
+  default-height: 384;
+
+  content: Adw.ToolbarView {
+    [top]
+    Adw.HeaderBar header_bar {}
+
+    content: Adw.BottomSheet adw_bottom_sheet {
+      Adw.StatusPage {
+        title: "Hello World!";
+      }
+
+      [bottom-bar]
+      Gtk.Box {
+        margin-top: 12;
+        margin-bottom: 12;
+        margin-start: 12;
+        margin-end: 12;
+        orientation: horizontal;
+        spacing: 12;
+
+        styles [
+          "toolbar",
+        ]
+
+        Gtk.Image {
+          icon-name: "multimedia-player-symbolic";
+        }
+
+        Gtk.Box {
+          hexpand: true;
+          orientation: vertical;
+          spacing: 2;
+
+          Gtk.Label {
+            label: "Music";
+            halign: start;
+
+            styles [
+              "heading",
+            ]
+          }
+
+          Gtk.Label {
+            label: "Artist";
+            halign: start;
+
+            styles [
+              "caption",
+            ]
+          }
+        }
+
+        Gtk.Button {
+          icon-name: "media-playback-start-symbolic";
+          clicked => $on_play_button_clicked();
+
+          styles [
+            "circular",
+          ]
+        }
+      }
+
+      [sheet]
+      Gtk.Box {
+        orientation: vertical;
+        spacing: 12;
+        margin-top: 12;
+        margin-bottom: 12;
+        margin-start: 12;
+        margin-end: 12;
+
+        Gtk.Box {
+          orientation: horizontal;
+          spacing: 12;
+
+          Gtk.Image {
+            icon-name: "multimedia-player-symbolic";
+            pixel-size: 80;
+          }
+
+          Gtk.Box {
+            orientation: vertical;
+            spacing: 6;
+
+            Gtk.Label {
+              label: "Music";
+              halign: start;
+
+              styles [
+                "title-2",
+              ]
+            }
+
+            Gtk.Label {
+              label: "Artist";
+              halign: start;
+
+              styles [
+                "title-4",
+              ]
+            }
+
+            Gtk.Label {
+              label: "Album • 2025";
+              halign: start;
+
+              styles [
+                "caption",
+              ]
+            }
+          }
+        }
+
+        Gtk.Box {
+          orientation: horizontal;
+          spacing: 6;
+
+          Gtk.Label {
+            label: "2:00";
+
+            styles [
+              "caption",
+            ]
+          }
+
+          Gtk.Scale {
+            orientation: horizontal;
+            hexpand: true;
+            draw-value: false;
+
+            adjustment: Gtk.Adjustment {
+              lower: 0.0;
+              upper: 100.0;
+              step-increment: 1.0;
+              value: 45.0;
+            };
+          }
+
+          Gtk.Label {
+            label: "3:00";
+
+            styles [
+              "caption",
+            ]
+          }
+        }
+
+        Gtk.Box {
+          orientation: horizontal;
+          spacing: 12;
+          halign: center;
+          margin-top: 12;
+
+          Gtk.Button {
+            icon-name: "media-playlist-shuffle-symbolic";
+
+            styles [
+              "circular",
+            ]
+          }
+
+          Gtk.Button {
+            icon-name: "media-skip-backward-symbolic";
+
+            styles [
+              "circular",
+            ]
+          }
+
+          Gtk.Button {
+            icon-name: "media-playback-pause-symbolic";
+
+            styles [
+              "circular",
+              "suggested-action",
+            ]
+          }
+
+          Gtk.Button {
+            icon-name: "media-skip-forward-symbolic";
+
+            styles [
+              "circular",
+            ]
+          }
+
+          Gtk.Button {
+            icon-name: "media-playlist-repeat-symbolic";
+
+            styles [
+              "circular",
+            ]
+          }
+        }
+
+        Gtk.Button button_close_sheet {
+          label: "Close";
+          margin-top: 12;
+          clicked => $on_button_close_sheet_clicked();
+
+          styles [
+            "destructive-action",
+          ]
+        }
+      }
+    };
+  };
+}

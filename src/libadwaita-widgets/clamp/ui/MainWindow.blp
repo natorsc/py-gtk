@@ -1,0 +1,40 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $ExampleWindow: Adw.ApplicationWindow {
+  title: "Python - PyGObject - GTK";
+  default-width: 683;
+  default-height: 384;
+
+  content: Adw.ToolbarView {
+    [top]
+    Adw.HeaderBar header_bar {}
+
+    content: Adw.Clamp {
+      child: Gtk.Box {
+        orientation: vertical;
+        spacing: 12;
+
+        ListBox {
+          selection-mode: none;
+
+          styles [
+            "boxed-list",
+          ]
+
+          Adw.ActionRow {
+            title: "Python - PyGObject - GTK";
+          }
+
+          Adw.ActionRow {
+            title: "Python - PyGObject - GTK";
+          }
+
+          Adw.ActionRow {
+            title: "Python - PyGObject - GTK";
+          }
+        }
+      };
+    };
+  };
+}

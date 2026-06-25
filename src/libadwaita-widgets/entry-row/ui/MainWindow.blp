@@ -1,0 +1,90 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $ExampleWindow: Adw.ApplicationWindow {
+  title: "Python - PyGObject - GTK";
+  default-width: 683;
+  default-height: 384;
+
+  content: Adw.ToolbarView {
+    [top]
+    Adw.HeaderBar header_bar {}
+
+    content: Gtk.Box {
+      orientation: vertical;
+      spacing: 12;
+      margin-top: 12;
+      margin-end: 12;
+      margin-bottom: 12;
+      margin-start: 12;
+
+      ListBox {
+        selection-mode: none;
+
+        styles [
+          "boxed-list",
+        ]
+
+        Adw.EntryRow {
+          title: "Python - PyGObject - GTK";
+          activates-default: true;
+          show-apply-button: true;
+          apply => $on_apply_button_pressed();
+
+          [prefix]
+          Image {
+            icon-name: "accessories-text-editor-symbolic";
+          }
+        }
+
+        Adw.EntryRow {
+          title: "Python - PyGObject - GTK";
+          activates-default: true;
+          show-apply-button: true;
+          apply => $on_apply_button_pressed();
+
+          [prefix]
+          Image {
+            icon-name: "accessories-text-editor-symbolic";
+          }
+        }
+
+        Adw.EntryRow {
+          title: "Python - PyGObject - GTK";
+          activates-default: true;
+          show-apply-button: true;
+          apply => $on_apply_button_pressed();
+
+          [prefix]
+          Image {
+            icon-name: "accessories-text-editor-symbolic";
+          }
+        }
+
+        Adw.EntryRow {
+          title: "Python - PyGObject - GTK";
+          activates-default: true;
+          show-apply-button: true;
+          apply => $on_apply_button_pressed();
+
+          [prefix]
+          Image {
+            icon-name: "accessories-text-editor-symbolic";
+          }
+        }
+
+        Adw.EntryRow {
+          title: "Python - PyGObject - GTK";
+          activates-default: true;
+          show-apply-button: true;
+          apply => $on_apply_button_pressed();
+
+          [prefix]
+          Image {
+            icon-name: "accessories-text-editor-symbolic";
+          }
+        }
+      }
+    };
+  };
+}
