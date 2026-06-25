@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://natorsc.github.io/py-gtk/</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://natorsc.github.io/py-gtk/"/>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://natorsc.github.io/py-gtk/pt-BR/"/>
+    </url>
+    <url>
+        <loc>https://natorsc.github.io/py-gtk/install-blueprint-markup-language/</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://natorsc.github.io/py-gtk/install-blueprint-markup-language/"/>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://natorsc.github.io/py-gtk/pt-BR/install-blueprint-markup-language/"/>
+    </url>
+    <url>
+        <loc>https://natorsc.github.io/py-gtk/install-gtk-chromeos/</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://natorsc.github.io/py-gtk/install-gtk-chromeos/"/>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://natorsc.github.io/py-gtk/pt-BR/install-gtk-chromeos/"/>
+    </url>
+    <url>
+        <loc>https://natorsc.github.io/py-gtk/install-gtk-linux/</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://natorsc.github.io/py-gtk/install-gtk-linux/"/>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://natorsc.github.io/py-gtk/pt-BR/install-gtk-linux/"/>
+    </url>
+    <url>
+        <loc>https://natorsc.github.io/py-gtk/install-gtk-macos/</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://natorsc.github.io/py-gtk/install-gtk-macos/"/>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://natorsc.github.io/py-gtk/pt-BR/install-gtk-macos/"/>
+    </url>
+    <url>
+        <loc>https://natorsc.github.io/py-gtk/install-gtk-windows-wsl2/</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://natorsc.github.io/py-gtk/install-gtk-windows-wsl2/"/>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://natorsc.github.io/py-gtk/pt-BR/install-gtk-windows-wsl2/"/>
+    </url>
+    <url>
+        <loc>https://natorsc.github.io/py-gtk/install-gtk-windows/</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://natorsc.github.io/py-gtk/install-gtk-windows/"/>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://natorsc.github.io/py-gtk/pt-BR/install-gtk-windows/"/>
+    </url>
+    <url>
+        <loc>https://natorsc.github.io/py-gtk/setup-blueprint-gnome-builder/</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://natorsc.github.io/py-gtk/setup-blueprint-gnome-builder/"/>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://natorsc.github.io/py-gtk/pt-BR/setup-blueprint-gnome-builder/"/>
+    </url>
+    <url>
+        <loc>https://natorsc.github.io/py-gtk/pt-BR/</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://natorsc.github.io/py-gtk/pt-BR/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://natorsc.github.io/py-gtk/"/>
+    </url>
+    <url>
+        <loc>https://natorsc.github.io/py-gtk/pt-BR/install-blueprint-markup-language/</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://natorsc.github.io/py-gtk/pt-BR/install-blueprint-markup-language/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://natorsc.github.io/py-gtk/install-blueprint-markup-language/"/>
+    </url>
+    <url>
+        <loc>https://natorsc.github.io/py-gtk/pt-BR/install-gtk-chromeos/</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://natorsc.github.io/py-gtk/pt-BR/install-gtk-chromeos/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://natorsc.github.io/py-gtk/install-gtk-chromeos/"/>
+    </url>
+    <url>
+        <loc>https://natorsc.github.io/py-gtk/pt-BR/install-gtk-linux/</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://natorsc.github.io/py-gtk/pt-BR/install-gtk-linux/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://natorsc.github.io/py-gtk/install-gtk-linux/"/>
+    </url>
+    <url>
+        <loc>https://natorsc.github.io/py-gtk/pt-BR/install-gtk-macos/</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://natorsc.github.io/py-gtk/pt-BR/install-gtk-macos/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://natorsc.github.io/py-gtk/install-gtk-macos/"/>
+    </url>
+    <url>
+        <loc>https://natorsc.github.io/py-gtk/pt-BR/install-gtk-windows-wsl2/</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://natorsc.github.io/py-gtk/pt-BR/install-gtk-windows-wsl2/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://natorsc.github.io/py-gtk/install-gtk-windows-wsl2/"/>
+    </url>
+    <url>
+        <loc>https://natorsc.github.io/py-gtk/pt-BR/install-gtk-windows/</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://natorsc.github.io/py-gtk/pt-BR/install-gtk-windows/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://natorsc.github.io/py-gtk/install-gtk-windows/"/>
+    </url>
+    <url>
+        <loc>https://natorsc.github.io/py-gtk/pt-BR/setup-blueprint-gnome-builder/</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://natorsc.github.io/py-gtk/pt-BR/setup-blueprint-gnome-builder/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://natorsc.github.io/py-gtk/setup-blueprint-gnome-builder/"/>
+    </url>
+</urlset>
