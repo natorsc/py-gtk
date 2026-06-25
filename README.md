@@ -48,13 +48,7 @@ Your donation keeps this project alive and helps me continue creating and sharin
 
 ## 📑 Tutorials
 
-- [Install Python and GTK on ChromeOS](./docs/install-gtk-chromeos-en.md).
-- [Install Python and GTK on Linux](./docs/install-gtk-linux-en.md).
-- [Install Python and GTK on macOS](./docs/install-gtk-macos-en.md).
-- [Install Python and GTK on Microsoft Windows](./docs/install-gtk-windows-en.md).
-- [Install Python and GTK on Microsoft Windows WSL 2](./docs/install-gtk-windows-wsl2-en.md).
-- [Install Blueprint markup language](./docs/install-blueprint-markup-language-en.md).
-- [Configure the Blueprint markup language in Gnome Builder](./docs/setup-blueprint-gnome-builder-en.md).
+- [https://natorsc.github.io/py-gtk/](https://natorsc.github.io/py-gtk/).
 
 ## 💡 Extra
 
